@@ -1,0 +1,15 @@
+{
+  "name": "b-open-io",
+  "owner": {
+    "name": "b-open-io",
+    "url": "https://github.com/b-open-io"
+  },
+  "description": "Official b-open-io Claude Code plugin marketplace",
+  "plugins": [
+    {
+      "name": "claude-peacock",
+      "source": "https://github.com/b-open-io/claude-peacock.git",
+      "description": "VSCode Peacock theme integration for Claude Code statusline with 24-bit true color support"
+    }
+  ]
+}
