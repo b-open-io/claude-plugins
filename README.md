@@ -21,14 +21,14 @@ Peacock theme integration for Claude Code - statusline with 24-bit true color su
 **Install:**
 ```shell
 /plugin install peacock@b-open-io
+/peacock:setup
+# Restart Claude Code
 ```
-
-Auto-configures on next session.
 
 **Uninstall:**
 ```shell
-/peacock:cleanup  # Remove settings first
-/plugin           # Then uninstall via menu
+/peacock:unsetup
+/plugin  # Select peacock and uninstall
 ```
 
 **Features:**
