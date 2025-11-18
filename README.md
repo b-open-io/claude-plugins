@@ -14,16 +14,22 @@ Add this marketplace to Claude Code:
 
 ## Available Plugins
 
-### 🎨 Claude Peacock
+### 🎨 Peacock
 
-VSCode Peacock theme integration for Claude Code statusline with 24-bit true color support.
+Peacock theme integration for Claude Code - statusline with 24-bit true color support.
 
 **Install:**
 ```shell
-/plugin install claude-peacock@b-open-io
+/plugin install peacock@b-open-io
 ```
 
-Auto-configures on next session - no manual setup needed!
+Auto-configures on next session.
+
+**Uninstall:**
+```shell
+/peacock:cleanup  # Remove settings first
+/plugin           # Then uninstall via menu
+```
 
 **Features:**
 - Automatic Peacock theme detection from `.vscode/settings.json`
