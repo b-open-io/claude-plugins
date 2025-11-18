@@ -8,7 +8,10 @@
   "plugins": [
     {
       "name": "claude-peacock",
-      "source": "https://github.com/b-open-io/claude-peacock.git",
+      "source": {
+        "source": "github",
+        "repo": "b-open-io/claude-peacock"
+      },
       "description": "VSCode Peacock theme integration for Claude Code statusline with 24-bit true color support"
     }
   ]
