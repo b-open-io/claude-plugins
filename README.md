@@ -21,8 +21,9 @@ VSCode Peacock theme integration for Claude Code statusline with 24-bit true col
 **Install:**
 ```shell
 /plugin install claude-peacock@b-open-io
-/peacock-setup
 ```
+
+Auto-configures on next session - no manual setup needed!
 
 **Features:**
 - Automatic Peacock theme detection from `.vscode/settings.json`
