@@ -21,6 +21,14 @@
         "url": "https://github.com/rohenaz/gemcp.git"
       },
       "description": "Google Gemini API MCP server - text generation, conversations, and image generation/editing"
+    },
+    {
+      "name": "sigma-auth",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/better-auth-plugin.git"
+      },
+      "description": "Sigma Auth integration guide - Bitcoin-native authentication with Better Auth and BAP identity"
     }
   ]
 }
