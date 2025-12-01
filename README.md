@@ -14,7 +14,7 @@ Add this marketplace to Claude Code:
 
 ## Available Plugins
 
-### 🎨 Peacock
+### Peacock
 
 Peacock theme integration for Claude Code - statusline with 24-bit true color support.
 
@@ -39,6 +39,31 @@ Peacock theme integration for Claude Code - statusline with 24-bit true color su
 - `/project-color` command for setting workspace colors
 
 [View Documentation →](https://github.com/b-open-io/claude-peacock)
+
+---
+
+### Gemcp
+
+Google Gemini API MCP server - text generation, conversations, and image generation/editing.
+
+**Install:**
+```shell
+/plugin install gemcp@b-open-io
+# Set your API key in environment: GEMINI_API_KEY
+# Restart Claude Code
+```
+
+**Features:**
+- `gemini_generate` - Text generation with thinking/reasoning modes
+- `gemini_messages` - Conversation-based generation
+- `gemini_image` - Image generation and editing (pass `input_image` for editing)
+
+**Requirements:**
+- `GEMINI_API_KEY` environment variable - Get from [Google AI Studio](https://aistudio.google.com/apikey)
+
+[View Documentation →](https://github.com/rohenaz/gemcp)
+
+---
 
 ## Usage
 
