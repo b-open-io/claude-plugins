@@ -96,6 +96,74 @@ Gemini 3.0 Pro Preview skills for design analysis, image generation, and visual 
 
 ---
 
+### BSV Skills
+
+Core BSV blockchain operations for Claude Code.
+
+**Install:**
+```shell
+/plugin install bsv-skills@b-open-io
+# Set FLOW_BACKUP_PASSPHRASE environment variable
+# Install CLIs: bbackup, bap (see plugin README)
+```
+
+**Skills:**
+- `encrypt-decrypt-backup` - Encrypt/decrypt .bep backup files
+- `create-bap-identity` - Create BAP identities (Type42/Legacy)
+- `manage-bap-backup` - List and export BAP members
+- `wallet-send-bsv` - Send BSV transactions
+- `wallet-encrypt-decrypt` - ECDH message encryption
+- `bsocial-posts` - On-chain social media posts
+- `check-bsv-price` - BSV price from WhatsOnChain
+- `decode-bsv-transaction` - Decode transaction hex
+- `lookup-bsv-address` - Address balance and history
+
+**Features:**
+- Follows Flow's BSV convention (`/.flow/.bsv/`)
+- Encrypted backup management
+- BAP identity creation and management
+- Wallet operations with @bsv/sdk
+- BSocial protocol integration
+- WhatsOnChain API utilities
+
+**Requirements:**
+- `FLOW_BACKUP_PASSPHRASE` environment variable
+- `bbackup` CLI: `bun add -g bitcoin-backup`
+- `bap` CLI: Clone and build from github.com/b-open-io/bap-cli
+
+[View Documentation →](https://github.com/b-open-io/bsv-skills)
+
+---
+
+### 1Sat Skills
+
+1Sat Ordinals NFT operations for BSV blockchain.
+
+**Install:**
+```shell
+/plugin install 1sat-skills@b-open-io
+# Install txex: bun add -g txex
+```
+
+**Skills:**
+- `extract-blockchain-media` - Extract ordinals/media from transactions (txex)
+- `wallet-create-ordinals` - Mint new ordinals/NFTs (js-1sat-ord)
+- `ordinals-marketplace` - Browse/search GorillaPool marketplace
+
+**Features:**
+- Extract inscribed media from blockchain
+- Mint ordinals and NFTs
+- Search and browse marketplace
+- GorillaPool Ordinals API integration
+
+**Requirements:**
+- `txex` CLI: `bun add -g txex`
+- `js-1sat-ord` package for minting
+
+[View Documentation →](https://github.com/b-open-io/1sat-skills)
+
+---
+
 ## Usage
 
 ### Install a Plugin
