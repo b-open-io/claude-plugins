@@ -29,6 +29,14 @@
         "url": "https://github.com/b-open-io/better-auth-plugin.git"
       },
       "description": "Sigma Auth integration guide - Bitcoin-native authentication with Better Auth and BAP identity"
+    },
+    {
+      "name": "gemskills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/gemskills.git"
+      },
+      "description": "Gemini 3.0 Pro skills - text generation, image generation, upscaling, editing, SVG creation, and segmentation"
     }
   ]
 }

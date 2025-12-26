@@ -65,6 +65,37 @@ Google Gemini API MCP server - text generation, conversations, and image generat
 
 ---
 
+### Gemskills
+
+Gemini 3.0 Pro Preview skills for design analysis, image generation, and visual operations.
+
+**Install:**
+```shell
+/plugin install gemskills@b-open-io
+# Set your API key in environment: GEMINI_API_KEY
+```
+
+**Skills:**
+- `ask-gemini` - Text generation and multi-image analysis (up to 10 images)
+- `generate-image` - Image generation with imagen-3.0
+- `upscale-image` - Upscale images 2x or 4x
+- `edit-image` - Inpainting and outpainting
+- `generate-svg` - SVG graphics generation
+- `segment-image` - Object segmentation and masking
+
+**Features:**
+- Gemini 3.0 Pro Preview for spatial awareness and design analysis
+- Multi-image support (compare up to 10 images in one request)
+- Comprehensive image operations (generate, upscale, edit, segment)
+- SVG generation for scalable graphics
+
+**Requirements:**
+- `GEMINI_API_KEY` environment variable - Get from [Google AI Studio](https://aistudio.google.com/apikey)
+
+[View Documentation →](https://github.com/b-open-io/gemskills)
+
+---
+
 ## Usage
 
 ### Install a Plugin
