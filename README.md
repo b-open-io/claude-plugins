@@ -50,8 +50,10 @@ Then install any plugin:
 
 #### bsv-skills
 
-**9 comprehensive skills for BSV blockchain development**
+**11 comprehensive skills for BSV blockchain development**
 
+- `wallet-brc100` - **NEW** BRC-100 wallet development (TypeScript - @bsv/wallet-toolbox)
+- `wallet-brc100-go` - **NEW** BRC-100 wallet development (Go - go-wallet-toolbox)
 - `encrypt-decrypt-backup` - Secure .bep backup management with bitcoin-backup CLI
 - `create-bap-identity` - Generate BAP identities (Type42/Legacy) for Bitcoin attestation
 - `manage-bap-backup` - List and export BAP member identities
