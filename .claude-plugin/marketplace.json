@@ -37,6 +37,22 @@
         "url": "https://github.com/b-open-io/gemskills.git"
       },
       "description": "Gemini 3.0 Pro skills - text generation, image generation, upscaling, editing, SVG creation, and segmentation"
+    },
+    {
+      "name": "bsv-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/bsv-skills.git"
+      },
+      "description": "Core BSV blockchain operations - backup management, BAP identity, wallet operations, BSocial posts, and blockchain utilities"
+    },
+    {
+      "name": "1sat-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/1sat-skills.git"
+      },
+      "description": "1Sat Ordinals NFT operations - extract blockchain media, mint ordinals, and browse marketplace"
     }
   ]
 }
