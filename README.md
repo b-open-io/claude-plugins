@@ -1,33 +1,21 @@
 # bOpen Marketplace
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![BSV](https://img.shields.io/badge/Blockchain-BSV-e8b315.svg)](https://bsvblockchain.org/)
-[![Claude Code](https://img.shields.io/badge/Built%20For-Claude%20Code-d97757.svg)](https://anthropic.com)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+Official plugin marketplace for Claude Code - BSV blockchain operations, AI tools, and developer utilities.
 
-**Supercharging Claude Code for the BSV Blockchain.**
-
-Welcome to the **bOpen Marketplace**, the premier ecosystem for Claude Code plugins dedicated to Bitcoin SV (BSV) development. We bridge the gap between natural language AI and the scalable power of the BSV blockchain, enabling developers to build, deploy, and manage Bitcoin applications with unprecedented speed.
-
----
-
-## ⚠️ Terms of Service & Disclaimer
-
-**Please read carefully before using any plugins from this marketplace.**
-
-> **Beta Software / Use at Your Own Risk**
-> The plugins listed in this repository are community-contributed and provided "AS IS" without warranty of any kind, express or implied.
+> **⚖️ Terms of Service & Disclaimer**
 >
-> 1.  **Financial Risk:** These tools interact with the BSV blockchain. Improper use may result in the loss of funds (BSV, Tokens, or Ordinals). Always test on a Testnet (Regtest/Testnet) before using Mainnet funds.
-> 2.  **Code Verification:** While we strive for quality, you are responsible for reviewing the code generated or executed by these plugins. Do not blindly execute financial transactions suggested by AI.
-> 3.  **Private Keys & Security:** Never share your private keys or backup passphrases. Use the `FLOW_BACKUP_PASSPHRASE` environment variable pattern for encrypted storage.
-> 4.  **Affiliation:** This marketplace is an independent community project and is not officially affiliated with Anthropic (Claude) or specific wallet providers unless explicitly stated.
+> **Please read before using:** The plugins in the bOpen Marketplace are provided "as is" under the MIT License.
+> - **You are responsible for your keys:** Never share private keys with an AI agent unless you are running it in a secure, local environment you control.
+> - **Financial Risk:** These tools interact with the BSV blockchain. Transactions are irreversible. **b-open-io** is not responsible for lost funds, failed transactions, or unintended contract interactions.
+> - **Audit First:** Always review the code or plugin permissions before allowing Claude to execute transactions on mainnet.
 
-By using the bOpen Marketplace, you agree to these terms and accept full responsibility for your development activities.
+## Welcome to the bOpen Marketplace
 
----
+Supercharge your development workflow by bridging the gap between Natural Language and the BSV Blockchain. The **bOpen Marketplace** is the premier directory for **Claude Code** plugins, designed to give your AI agent direct capability to interact with Bitcoin SV.
 
-## 🚀 Installation
+Whether you need to mint Ordinals, authenticate users via Bitcoin, or generate UI components on the fly, our curated collection of plugins turns Claude into a full-stack blockchain developer. Stop writing boilerplate and start building the future of the internet.
+
+## Quick Start
 
 Add this marketplace to Claude Code:
 
@@ -41,102 +29,98 @@ Then install any plugin:
 /plugin install <plugin-name>@b-open-io
 ```
 
----
+## The Marketplace
 
-## 📦 Featured Plugins
+### 🔗 BSV & Blockchain Operations
 
-Explore our curated suite of tools designed to cover every aspect of the BSV development stack.
+*Core tools for wallet management, transaction building, and network interaction.*
 
-### 🔐 BSV Skills
-**The Core Foundation.** A comprehensive toolkit for BSV blockchain operations.
+#### bsv-skills
+
+**9 comprehensive skills for BSV blockchain development**
+
+- `encrypt-decrypt-backup` - Secure .bep backup management with bitcoin-backup CLI
+- `create-bap-identity` - Generate BAP identities (Type42/Legacy) for Bitcoin attestation
+- `manage-bap-backup` - List and export BAP member identities
+- `wallet-send-bsv` - Send BSV transactions with @bsv/sdk
+- `wallet-encrypt-decrypt` - ECDH message encryption with BSV keys
+- `bsocial-posts` - Create and read on-chain social media posts (BSocial/BMAP)
+- `check-bsv-price` - Get current BSV price from WhatsOnChain API
+- `decode-bsv-transaction` - Decode transaction hex into readable format
+- `lookup-bsv-address` - Query address balance, history, and UTXOs
 
 **Install:**
 ```bash
 /plugin install bsv-skills@b-open-io
 ```
 
-**Skills:**
-- Backup Management: `encrypt-decrypt-backup`, `create-bap-identity`, `manage-bap-backup`
-- Wallet Operations: `wallet-send-bsv`, `wallet-encrypt-decrypt`
-- On-Chain Social: `bsocial-posts`
-- Utilities: `check-bsv-price`, `decode-bsv-transaction`, `lookup-bsv-address`
-
-**Requirements:** `FLOW_BACKUP_PASSPHRASE` env var, `bbackup` and `bap` CLI tools
+**Requirements:** `FLOW_BACKUP_PASSPHRASE`, CLI tools: `bbackup`, `bap`
 
 [View Documentation →](https://github.com/b-open-io/bsv-skills)
 
 ---
 
-### 🎨 1Sat Skills
-**Ordinals & NFTs.** Specialized tools for the 1Sat Ordinals protocol.
+### 🎨 NFTs & Ordinals
+
+*1Sat Ordinals operations for NFT minting and marketplace browsing.*
+
+#### 1sat-skills
+
+**3 skills for 1Sat Ordinals NFT operations**
+
+- `extract-blockchain-media` - Extract media files from blockchain transactions with txex
+- `wallet-create-ordinals` - Mint new ordinals/inscriptions on BSV
+- `ordinals-marketplace` - Browse and search GorillaPool marketplace
 
 **Install:**
 ```bash
 /plugin install 1sat-skills@b-open-io
 ```
 
-**Skills:**
-- `extract-blockchain-media` - Extract ordinals from transactions (txex)
-- `wallet-create-ordinals` - Mint ordinals/inscriptions
-- `ordinals-marketplace` - Browse GorillaPool marketplace
-
-**Requirements:** `txex` CLI (`bun add -g txex`)
+**Requirements:** `txex` CLI, `js-1sat-ord` package
 
 [View Documentation →](https://github.com/b-open-io/1sat-skills)
 
 ---
 
-### 🔑 Sigma Auth
-**Identity & Authentication.** Bitcoin-native OAuth with BAP identity.
+### 🤖 AI & Design Tools
 
-**Install:**
-```bash
-/plugin install sigma-auth@b-open-io
-```
+*Generative tools powered by Google Gemini for design and visual operations.*
 
-**Skills:**
-- `setup-nextjs` - Next.js OAuth integration guide
+#### gemskills
 
-**Features:**
-- Better Auth + Sigma Identity integration
-- Bitcoin wallet authentication
-- BAP identity workflows
+**6 skills for AI-powered design and image operations**
 
-[View Documentation →](https://github.com/b-open-io/better-auth-plugin)
-
----
-
-### 🤖 Gemskills
-**AI-Powered Design & Vision.** Gemini 3.0 Pro for design analysis and image operations.
+- `ask-gemini` - Text generation + multi-image analysis (up to 10 images)
+- `generate-image` - Create images with Imagen 3.0
+- `upscale-image` - Upscale images 2x or 4x
+- `edit-image` - Inpainting and outpainting operations
+- `generate-svg` - Create scalable SVG graphics
+- `segment-image` - Object segmentation and masking
 
 **Install:**
 ```bash
 /plugin install gemskills@b-open-io
 ```
 
-**Skills:**
-- `ask-gemini` - Multi-image analysis (up to 10 images)
-- `generate-image`, `upscale-image`, `edit-image`
-- `generate-svg`, `segment-image`
-
-**Requirements:** `GEMINI_API_KEY` ([Get API Key](https://aistudio.google.com/apikey))
+**Requirements:** `GEMINI_API_KEY` from [Google AI Studio](https://aistudio.google.com/apikey)
 
 [View Documentation →](https://github.com/b-open-io/gemskills)
 
 ---
 
-### 🔧 Gemcp
-**Gemini MCP Server.** Text generation, conversations, and image generation.
+#### gemcp
+
+**Gemini API MCP server for text generation, conversations, and image operations**
+
+- `gemini_generate` - Text generation with thinking/reasoning modes
+- `gemini_messages` - Conversation-based generation
+- `gemini_image` - Image generation and editing
 
 **Install:**
 ```bash
 /plugin install gemcp@b-open-io
 ```
-
-**Features:**
-- `gemini_generate` - Text generation with reasoning modes
-- `gemini_messages` - Conversation-based generation
-- `gemini_image` - Image generation and editing
 
 **Requirements:** `GEMINI_API_KEY`
 
@@ -144,8 +128,42 @@ Explore our curated suite of tools designed to cover every aspect of the BSV dev
 
 ---
 
-### 🦚 Peacock
-**Statusline Themes.** Peacock theme integration with 24-bit color support.
+### 🔐 Bitcoin Authentication
+
+*Bitcoin-native authentication with BAP identity support.*
+
+#### sigma-auth
+
+**Bitcoin-native OAuth integration for Next.js applications**
+
+- `setup-nextjs` - Complete guide for integrating Sigma Auth with Next.js
+- Bitcoin wallet authentication flow
+- BAP (Bitcoin Attestation Protocol) identity integration
+- OAuth client setup and token exchange
+
+**Install:**
+```bash
+/plugin install sigma-auth@b-open-io
+```
+
+**Requirements:** `SIGMA_MEMBER_PRIVATE_KEY`, registered OAuth client ID
+
+[View Documentation →](https://github.com/b-open-io/better-auth-plugin)
+
+---
+
+### 🛠️ Developer Utilities
+
+*Tools for enhancing your development environment.*
+
+#### peacock
+
+**Peacock theme integration with 24-bit true color statusline**
+
+- Automatic theme detection from `.vscode/settings.json`
+- Project-aware statusline with CWD tracking
+- Git branch and lint status
+- Theme-matched colors
 
 **Install:**
 ```bash
@@ -153,68 +171,51 @@ Explore our curated suite of tools designed to cover every aspect of the BSV dev
 /peacock:setup
 ```
 
-**Features:**
-- Auto-detect Peacock themes from VS Code settings
-- 24-bit true color statusline
-- Git branch and lint status
-- Project-aware CWD tracking
-
 [View Documentation →](https://github.com/b-open-io/claude-peacock)
 
 ---
 
-## 🤝 Contributing
+## 🚀 Contributing
 
-We believe in the power of open source and the Metanet. We welcome contributions from all BSV developers!
+**Join the bOpen Ecosystem**
 
-### How to Contribute
-1.  **Fork** the repository
-2.  **Create** a feature branch (`git checkout -b feature/amazing-new-plugin`)
-3.  **Commit** your changes with clear documentation
-4.  **Push** to the branch
-5.  **Open a Pull Request**
+We are building an open ecosystem and we want your tools! If you have built a Claude Code plugin that helps BSV developers:
 
-### Plugin Guidelines
-*   **Safety First:** Plugins handling private keys must have strict security warnings
-*   **BSV Standards:** Adhere to established BSV standards (derivation paths, script formats)
-*   **Documentation:** Every plugin must have a comprehensive README
-*   **Testing:** Include test cases and usage examples
-*   **Security:** Use environment variables for secrets (`FLOW_BACKUP_PASSPHRASE` pattern)
+1. **Fork** this repository
+2. **Add** your plugin to `.claude-plugin/marketplace.json`
+3. **Update** this README with your plugin details
+4. Submit a **Pull Request**
 
-### Plugin Structure
+**Plugin Requirements:**
+- Well-documented with clear usage instructions
+- Follows Claude Code plugin structure
+- Includes `.claude-plugin/plugin.json` manifest
+- Tested and working
+- **Security review:** Plugins must not exfiltrate private keys
+
+### Example Plugin Entry
+
+```json
+{
+  "name": "your-plugin",
+  "source": {
+    "source": "url",
+    "url": "https://github.com/yourusername/your-plugin.git"
+  },
+  "description": "Clear description of what your plugin does"
+}
 ```
-your-plugin/
-├── .claude-plugin/
-│   └── plugin.json        # Manifest with name, version, components
-├── skills/                # Agent skills (optional)
-│   └── skill-name/
-│       └── SKILL.md       # Skill definition
-├── commands/              # Slash commands (optional)
-├── agents/                # Custom agents (optional)
-└── README.md             # Documentation
-```
+
+## Support & Community
+
+- **Issues:** [GitHub Issues](https://github.com/b-open-io/claude-plugins/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/b-open-io/claude-plugins/discussions)
+- **Documentation:** [Claude Code Docs](https://docs.anthropic.com/en/docs/build-with-claude/claude-code)
+
+## License
+
+MIT License - see individual plugins for their licenses.
 
 ---
 
-## 💬 Community & Support
-
-Join the bOpen community and connect with other BSV developers.
-
-*   **GitHub Issues:** [Report bugs or request features](https://github.com/b-open-io/claude-plugins/issues)
-*   **Discussions:** [Community discussions](https://github.com/b-open-io/claude-plugins/discussions)
-*   **BSV Association:** [Learn about Bitcoin SV](https://bsvblockchain.org/)
-
----
-
-## 📚 Resources
-
-- [Claude Code Documentation](https://docs.anthropic.com/en/docs/build-with-claude/claude-code)
-- [Agent SDK Documentation](https://docs.anthropic.com/en/api/agent-sdk)
-- [BSV Documentation](https://docs.bsvblockchain.org/)
-- [b-open-io GitHub](https://github.com/b-open-io)
-
----
-
-<p align="center">
-  Built with 🧡 for the <b>Bitcoin SV</b> ecosystem.
-</p>
+**Built with ❤️ by the bOpen community for BSV developers**
