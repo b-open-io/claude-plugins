@@ -33,7 +33,7 @@ Then install any plugin:
 
 | Plugin | Category | Description | Install |
 |--------|----------|-------------|---------|
-| **[bsv-skills](#bsv-skills)** | 🔗 Blockchain | 9 skills for BSV operations, wallets, BAP identity, BSocial | `/plugin install bsv-skills@b-open-io` |
+| **[bsv-skills](#bsv-skills)** | 🔗 Blockchain | 11 skills for BSV operations, BRC-100 wallets (TS/Go), BAP identity, BSocial | `/plugin install bsv-skills@b-open-io` |
 | **[1sat-skills](#1sat-skills)** | 🎨 NFTs | 3 skills for 1Sat Ordinals, media extraction, marketplace | `/plugin install 1sat-skills@b-open-io` |
 | **[gemskills](#gemskills)** | 🤖 AI/Design | 6 skills for Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
 | **[sigma-auth](#sigma-auth)** | 🔐 Auth | Bitcoin-native OAuth for Next.js with BAP identity | `/plugin install sigma-auth@b-open-io` |
