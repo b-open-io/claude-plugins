@@ -147,7 +147,14 @@ export async function POST(request: Request) {
   });
 
   if (error) {
-    return NextResponse.json({ error: "Failed to subscribe" }, { status: 500 });
+    // Return actual error, not generic 500
+    const message = typeof error === "object" && "message" in error
+      ? (error as { message: string }).message
+      : "Failed to subscribe";
+    const statusCode = typeof error === "object" && "statusCode" in error
+      ? (error as { statusCode: number }).statusCode
+      : 500;
+    return NextResponse.json({ error: message }, { status: statusCode });
   }
 
   // Send welcome email
