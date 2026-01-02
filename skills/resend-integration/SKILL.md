@@ -247,6 +247,18 @@ EMAIL_FORWARD_TO=email1@example.com,email2@example.com
 
 ## Resend Dashboard Setup
 
+**IMPORTANT: Create these in the dashboard BEFORE deploying code that uses them.**
+
+### Create Properties
+
+Properties must exist before the API can use them.
+
+1. Go to Audiences → Properties tab
+2. Create these properties:
+   - `domain` (text) - For multi-domain account filtering
+   - `source` (text) - How contact signed up (newsletter, booking, contact)
+   - `company` (text) - Optional company name
+
 ### Create Segments
 
 1. Go to Audiences → Segments
