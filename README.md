@@ -35,6 +35,7 @@ Then install any plugin:
 |--------|----------|-------------|---------|
 | **[bsv-skills](#bsv-skills)** | 🔗 Blockchain | 11 skills for BSV operations, BRC-100 wallets (TS/Go), BAP identity, BSocial | `/plugin install bsv-skills@b-open-io` |
 | **[1sat-skills](#1sat-skills)** | 🎨 NFTs | 3 skills for 1Sat Ordinals, media extraction, marketplace | `/plugin install 1sat-skills@b-open-io` |
+| **[bopen-tools](#bopen-tools)** | 🛠️ Dev Tools | 19 agents, 9 skills, hooks, commands for development | `/plugin install bopen-tools@b-open-io` |
 | **[gemskills](#gemskills)** | 🤖 AI/Design | 6 skills for Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
 | **[sigma-auth](#sigma-auth)** | 🔐 Auth | Bitcoin-native OAuth for Next.js with BAP identity | `/plugin install sigma-auth@b-open-io` |
 | **[gemcp](#gemcp)** | 🤖 AI/Design | Gemini MCP server for text/image generation | `/plugin install gemcp@b-open-io` |
@@ -170,6 +171,44 @@ Then install any plugin:
 ### 🛠️ Developer Utilities
 
 *Tools for enhancing your development environment.*
+
+#### bopen-tools
+
+**19 specialized agents and 9 skills for development workflows**
+
+**Agents:**
+- `nextjs16-specialist` - Next.js 16 migration and modern React
+- `auth-specialist` - Authentication systems and OAuth
+- `prompt-engineer` - Skill and command authoring
+- `documentation-writer` - Technical writing and PRDs
+- `payment-specialist` - Payment integrations
+- `code-auditor` - Code quality review
+- `test-specialist` - Testing strategies
+- `database-specialist` - Database design
+- Plus 11 more specialized agents
+
+**Skills:**
+- `npm-publish` - Package publishing workflow
+- `resend-integration` - Email integration with Resend
+- `frontend-design` - UI design with modern frameworks
+- `notebooklm` - Google NotebookLM integration
+- `bitcoin-auth-diagnostics` - Auth troubleshooting
+- Plus 4 more skills
+
+**Hooks:**
+- Auto git add after edits
+- Lint on save/session start
+- Environment file protection
+- Uncommitted changes reminder
+
+**Install:**
+```bash
+/plugin install bopen-tools@b-open-io
+```
+
+[View Documentation →](https://github.com/b-open-io/prompts)
+
+---
 
 #### peacock
 

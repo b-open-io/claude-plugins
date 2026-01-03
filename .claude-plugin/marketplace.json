@@ -53,6 +53,14 @@
         "url": "https://github.com/b-open-io/1sat-skills.git"
       },
       "description": "1Sat Ordinals NFT operations - extract blockchain media, mint ordinals, and browse marketplace"
+    },
+    {
+      "name": "bopen-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/prompts.git"
+      },
+      "description": "Development agents, skills, hooks, and commands - 19 specialized agents, 9 skills, consolidated hooks"
     }
   ]
 }
