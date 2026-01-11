@@ -28,7 +28,7 @@
         "source": "url",
         "url": "https://github.com/b-open-io/better-auth-plugin.git"
       },
-      "description": "Sigma Auth integration guide - Bitcoin-native authentication with Better Auth and BAP identity"
+      "description": "Sigma Auth - Bitcoin-native OAuth with Better Auth, BAP identity, bitcoin-auth diagnostics, and comprehensive setup guides"
     },
     {
       "name": "gemskills",
