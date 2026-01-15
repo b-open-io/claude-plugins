@@ -61,6 +61,14 @@
         "url": "https://github.com/b-open-io/prompts.git"
       },
       "description": "Development agents, skills, hooks, and commands - 19 specialized agents, 9 skills, consolidated hooks"
+    },
+    {
+      "name": "send-secret",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/danwag06/send-secret.git"
+      },
+      "description": "P2P encrypted secret sharing skills - send and receive secrets without exposing content to the agent"
     }
   ]
 }
