@@ -38,7 +38,6 @@ Then install any plugin:
 | **[bopen-tools](#bopen-tools)** | 🛠️ Dev Tools | 19 agents, 9 skills, hooks, commands for development | `/plugin install bopen-tools@b-open-io` |
 | **[gemskills](#gemskills)** | 🤖 AI/Design | 6 skills for Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
 | **[sigma-auth](#sigma-auth)** | 🔐 Auth | Bitcoin-native OAuth for Next.js with BAP identity | `/plugin install sigma-auth@b-open-io` |
-| **[gemcp](#gemcp)** | 🤖 AI/Design | Gemini MCP server for text/image generation | `/plugin install gemcp@b-open-io` |
 | **[peacock](#peacock)** | 🛠️ Dev Tools | Theme integration with 24-bit color statusline | `/plugin install peacock@b-open-io` |
 
 ---
@@ -122,25 +121,6 @@ Then install any plugin:
 **Requirements:** `GEMINI_API_KEY` from [Google AI Studio](https://aistudio.google.com/apikey)
 
 [View Documentation →](https://github.com/b-open-io/gemskills)
-
----
-
-#### gemcp
-
-**Gemini API MCP server for text generation, conversations, and image operations**
-
-- `gemini_generate` - Text generation with thinking/reasoning modes
-- `gemini_messages` - Conversation-based generation
-- `gemini_image` - Image generation and editing
-
-**Install:**
-```bash
-/plugin install gemcp@b-open-io
-```
-
-**Requirements:** `GEMINI_API_KEY`
-
-[View Documentation →](https://github.com/rohenaz/gemcp)
 
 ---
 
