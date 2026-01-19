@@ -7,14 +7,6 @@
   "description": "Official b-open-io Claude Code plugin marketplace",
   "plugins": [
     {
-      "name": "peacock",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/b-open-io/claude-peacock.git"
-      },
-      "description": "Peacock theme integration for Claude Code - statusline with 24-bit true color support"
-    },
-    {
       "name": "sigma-auth",
       "source": {
         "source": "url",
@@ -52,7 +44,7 @@
         "source": "url",
         "url": "https://github.com/b-open-io/prompts.git"
       },
-      "description": "Development agents, skills, hooks, and commands - 19 specialized agents, 9 skills, consolidated hooks"
+      "description": "Development agents, skills, hooks, and commands - 19 specialized agents, 9 skills, color theming, consolidated hooks"
     },
     {
       "name": "send-secret",
