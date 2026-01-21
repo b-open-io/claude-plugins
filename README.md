@@ -4,20 +4,28 @@ Plugin marketplace for Claude Code. BSV blockchain operations, AI tools, and dev
 
 ## Installation
 
+Add this marketplace to Claude Code:
+
 ```bash
-skills add b-open-io/<plugin-name>
+/plugin marketplace add b-open-io/claude-plugins
+```
+
+Then install any plugin:
+
+```bash
+/plugin install <plugin-name>@b-open-io
 ```
 
 ## Plugins
 
-| Plugin | Description |
-|--------|-------------|
-| [bsv-skills](#bsv-skills) | 24 skills for BSV wallets, identity, transactions, standards |
-| [1sat-skills](#1sat-skills) | 1Sat Ordinals minting, media extraction, marketplace |
-| [bopen-tools](#bopen-tools) | 19 agents, 9 skills, hooks for development workflows |
-| [gemskills](#gemskills) | Gemini AI image generation, analysis, editing |
-| [sigma-auth](#sigma-auth) | Bitcoin-native OAuth with BAP identity |
-| [peacock](#peacock) | VSCode theme integration with 24-bit statusline |
+| Plugin | Description | Install |
+|--------|-------------|---------|
+| [bsv-skills](#bsv-skills) | 24 skills for BSV wallets, identity, transactions, standards | `/plugin install bsv-skills@b-open-io` |
+| [1sat-skills](#1sat-skills) | 1Sat Ordinals minting, media extraction, marketplace | `/plugin install 1sat-skills@b-open-io` |
+| [bopen-tools](#bopen-tools) | 19 agents, 9 skills, hooks for development workflows | `/plugin install bopen-tools@b-open-io` |
+| [gemskills](#gemskills) | Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
+| [sigma-auth](#sigma-auth) | Bitcoin-native OAuth with BAP identity | `/plugin install sigma-auth@b-open-io` |
+| [peacock](#peacock) | VSCode theme integration with 24-bit statusline | `/plugin install peacock@b-open-io` |
 
 ---
 
@@ -26,7 +34,7 @@ skills add b-open-io/<plugin-name>
 BSV blockchain development toolkit.
 
 ```bash
-skills add b-open-io/bsv-skills
+/plugin install bsv-skills@b-open-io
 ```
 
 **Wallet Development**
@@ -76,7 +84,7 @@ skills add b-open-io/bsv-skills
 1Sat Ordinals NFT operations.
 
 ```bash
-skills add b-open-io/1sat-skills
+/plugin install 1sat-skills@b-open-io
 ```
 
 - `extract-blockchain-media` - Extract media from transactions
@@ -94,7 +102,7 @@ skills add b-open-io/1sat-skills
 Development workflow automation.
 
 ```bash
-skills add b-open-io/bopen-tools
+/plugin install bopen-tools@b-open-io
 ```
 
 **Agents** (19 specialized sub-agents)
@@ -147,7 +155,7 @@ skills add b-open-io/bopen-tools
 AI-powered image operations via Google Gemini.
 
 ```bash
-skills add b-open-io/gemskills
+/plugin install gemskills@b-open-io
 ```
 
 - `ask-gemini` - Text generation + multi-image analysis
@@ -168,7 +176,7 @@ skills add b-open-io/gemskills
 Bitcoin-native OAuth for Next.js.
 
 ```bash
-skills add b-open-io/sigma-auth
+/plugin install sigma-auth@b-open-io
 ```
 
 - `setup-nextjs` - Integration guide for Next.js
@@ -187,7 +195,7 @@ skills add b-open-io/sigma-auth
 VSCode Peacock theme integration with Claude Code statusline.
 
 ```bash
-skills add b-open-io/peacock
+/plugin install peacock@b-open-io
 ```
 
 - Automatic theme detection from `.vscode/settings.json`
