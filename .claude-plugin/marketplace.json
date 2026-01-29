@@ -53,6 +53,14 @@
         "url": "https://github.com/danwag06/send-secret.git"
       },
       "description": "P2P encrypted secret sharing skills - send and receive secrets without exposing content to the agent"
+    },
+    {
+      "name": "claude-perms",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/claude-perms.git"
+      },
+      "description": "TUI permission analyzer - visualize tool usage frequency, approve/deny counts, and manage Claude Code permissions with live diff previews"
     }
   ]
 }
