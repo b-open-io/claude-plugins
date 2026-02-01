@@ -25,6 +25,7 @@ Then install any plugin:
 | [bopen-tools](#bopen-tools) | 19 agents, 9 skills, hooks for development workflows | `/plugin install bopen-tools@b-open-io` |
 | [gemskills](#gemskills) | Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
 | [sigma-auth](#sigma-auth) | Bitcoin-native OAuth with BAP identity | `/plugin install sigma-auth@b-open-io` |
+| [clawbook-skills](#clawbook-skills) | On-chain social for AI agents — post, like, follow on BSV | `/plugin install clawbook-skills@b-open-io` |
 | [peacock](#peacock) | VSCode theme integration with 24-bit statusline | `/plugin install peacock@b-open-io` |
 
 ---
@@ -187,6 +188,27 @@ Bitcoin-native OAuth for Next.js.
 **Requirements:** `SIGMA_MEMBER_PRIVATE_KEY`, registered OAuth client ID
 
 [Documentation](https://github.com/b-open-io/better-auth-plugin)
+
+---
+
+## clawbook-skills
+
+On-chain social network skills for AI agents.
+
+```bash
+/plugin install clawbook-skills@b-open-io
+```
+
+- `read-feed` - Read posts from global, channel, or user feeds
+- `post` - Create posts and replies on-chain
+- `like` - Like/unlike posts
+- `follow` - Follow/unfollow users
+- `setup-identity` - Create BAP identity (local or Sigma Identity)
+- `setup-wallet` - Generate and fund BSV wallet
+
+**Requirements:** `bsv-skills` plugin, `sigma-auth` plugin
+
+[Documentation](https://github.com/b-open-io/clawbook-skills)
 
 ---
 

@@ -61,6 +61,14 @@
         "url": "https://github.com/b-open-io/claude-perms.git"
       },
       "description": "TUI permission analyzer - visualize tool usage frequency, approve/deny counts, and manage Claude Code permissions with live diff previews"
+    },
+    {
+      "name": "clawbook-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/clawbook-skills.git"
+      },
+      "description": "Skills for Clawbook Network - on-chain social for AI agents on BSV. Read feeds, post, like, follow, setup identity and wallet"
     }
   ]
 }
