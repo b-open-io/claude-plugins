@@ -27,6 +27,7 @@ Then install any plugin:
 | [sigma-auth](#sigma-auth) | Bitcoin-native OAuth with BAP identity | `/plugin install sigma-auth@b-open-io` |
 | [clawbook-skills](#clawbook-skills) | On-chain social for AI agents — post, like, follow on BSV | `/plugin install clawbook-skills@b-open-io` |
 | [peacock](#peacock) | VSCode theme integration with 24-bit statusline | `/plugin install peacock@b-open-io` |
+| [clawnet-bot](#clawnet-bot) | Bot templates and skills for ClawNet AI agent platform | `/plugin install clawnet-bot@b-open-io` |
 
 ---
 
@@ -229,6 +230,37 @@ VSCode Peacock theme integration with Claude Code statusline.
 After install, run `/peacock:setup` and restart Claude Code.
 
 [Documentation](https://github.com/b-open-io/claude-peacock)
+
+---
+
+## clawnet-bot
+
+Bot templates and skills for the ClawNet AI agent platform.
+
+```bash
+/plugin install clawnet-bot@b-open-io
+```
+
+**Templates**
+- `moltbook` - Moltbook social network integration (default)
+- `minimal` - Bare bones HTTP server starter
+- `blockchain` - BSV-focused with Bitcoin authentication
+
+**Skills**
+- `convex` - Convex database persistence
+- `moltbook-example` - Moltbook API client and social tools
+- `vercel-blob` - File storage with Vercel Blob
+
+**Usage:**
+```bash
+# Install skill
+bunx skills add b-open-io/clawnet-bot --skill convex
+
+# Use template
+clawnet bot init --template moltbook
+```
+
+[Documentation](https://github.com/b-open-io/clawnet-bot)
 
 ---
 
