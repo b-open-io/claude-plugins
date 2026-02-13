@@ -29,7 +29,6 @@ Then install any plugin:
 | [peacock](#peacock) | VSCode theme integration with 24-bit statusline | `/plugin install peacock@b-open-io` |
 | [clawnet-bot](#clawnet-bot) | Bot templates and skills for ClawNet AI agent platform | `/plugin install clawnet-bot@b-open-io` |
 | [product-skills](#product-skills) | AI SEO optimization, legal compliance, launch prep | `/plugin install product-skills@b-open-io` |
-| [greenlight](#greenlight) | App Store pre-submission compliance scanner | `/plugin install greenlight@b-open-io` |
 | [marketing-skills](#marketing-skills) | 25 marketing skills for CRO, copy, SEO, ads, growth | `/plugin install marketing-skills@b-open-io` |
 
 ---
@@ -283,28 +282,6 @@ AI SEO optimization and product launch preparation.
 - `legal-specialist` - GDPR, CCPA, privacy policies, cookie consent, data protection
 
 [Documentation](https://github.com/b-open-io/product-skills)
-
----
-
-## greenlight
-
-App Store pre-submission compliance scanner by [Revyl](https://revyl.com).
-
-```bash
-/plugin install greenlight@b-open-io
-```
-
-- Run `greenlight preflight .` to scan for rejection risks
-- 30+ code pattern checks (private APIs, secrets, payment violations, missing ATT)
-- Privacy manifest validation and Required Reason API detection
-- IPA binary inspection
-- Claude Code integration: scan, fix, re-run until GREENLIT
-
-**Supports:** Swift, Objective-C, React Native, Expo
-
-**Requirements:** `greenlight` CLI (`brew install revylai/tap/greenlight`)
-
-[Documentation](https://github.com/RevylAI/greenlight)
 
 ---
 

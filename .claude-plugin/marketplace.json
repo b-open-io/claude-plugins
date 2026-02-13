@@ -79,14 +79,6 @@
       "description": "Production-ready skills for AI SEO optimization, legal compliance, and launch preparation - 2025 best practices for AI search platforms"
     },
     {
-      "name": "greenlight",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/RevylAI/greenlight.git"
-      },
-      "description": "App Store pre-submission compliance scanner - code patterns, privacy manifests, IPA binaries, metadata checks. Run, fix, re-run until GREENLIT"
-    },
-    {
       "name": "marketing-skills",
       "source": {
         "source": "url",
