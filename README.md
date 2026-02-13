@@ -1,6 +1,6 @@
 # bOpen Marketplace
 
-Plugin marketplace for Claude Code. BSV blockchain operations, AI tools, and developer utilities.
+Plugin marketplace for Claude Code. BSV blockchain operations, AI tools, marketing, compliance, and developer utilities.
 
 ## Installation
 
@@ -28,6 +28,9 @@ Then install any plugin:
 | [clawbook-skills](#clawbook-skills) | On-chain social for AI agents — post, like, follow on BSV | `/plugin install clawbook-skills@b-open-io` |
 | [peacock](#peacock) | VSCode theme integration with 24-bit statusline | `/plugin install peacock@b-open-io` |
 | [clawnet-bot](#clawnet-bot) | Bot templates and skills for ClawNet AI agent platform | `/plugin install clawnet-bot@b-open-io` |
+| [product-skills](#product-skills) | AI SEO optimization, legal compliance, launch prep | `/plugin install product-skills@b-open-io` |
+| [greenlight](#greenlight) | App Store pre-submission compliance scanner | `/plugin install greenlight@b-open-io` |
+| [marketing-skills](#marketing-skills) | 25 marketing skills for CRO, copy, SEO, ads, growth | `/plugin install marketing-skills@b-open-io` |
 
 ---
 
@@ -261,6 +264,73 @@ clawnet bot init --template moltbook
 ```
 
 [Documentation](https://github.com/b-open-io/clawnet-bot)
+
+---
+
+## product-skills
+
+AI SEO optimization and product launch preparation.
+
+```bash
+/plugin install product-skills@b-open-io
+```
+
+**Skills**
+- `ai-seo-optimization` - 2025 AI SEO best practices for Google AI Overview, ChatGPT, Perplexity, Gemini, Bing Chat
+
+**Agents**
+- `seo-specialist` - Entity building, schema markup, E-E-A-T, multi-platform optimization
+- `legal-specialist` - GDPR, CCPA, privacy policies, cookie consent, data protection
+
+[Documentation](https://github.com/b-open-io/product-skills)
+
+---
+
+## greenlight
+
+App Store pre-submission compliance scanner by [Revyl](https://revyl.com).
+
+```bash
+/plugin install greenlight@b-open-io
+```
+
+- Run `greenlight preflight .` to scan for rejection risks
+- 30+ code pattern checks (private APIs, secrets, payment violations, missing ATT)
+- Privacy manifest validation and Required Reason API detection
+- IPA binary inspection
+- Claude Code integration: scan, fix, re-run until GREENLIT
+
+**Supports:** Swift, Objective-C, React Native, Expo
+
+**Requirements:** `greenlight` CLI (`brew install revylai/tap/greenlight`)
+
+[Documentation](https://github.com/RevylAI/greenlight)
+
+---
+
+## marketing-skills
+
+25 marketing skills by [Corey Haines](https://corey.co).
+
+```bash
+/plugin install marketing-skills@b-open-io
+```
+
+**Conversion Optimization** - `page-cro`, `signup-flow-cro`, `onboarding-cro`, `form-cro`, `popup-cro`, `paywall-upgrade-cro`
+
+**Content & Copy** - `copywriting`, `copy-editing`, `email-sequence`, `social-content`
+
+**SEO & Discovery** - `seo-audit`, `programmatic-seo`, `competitor-alternatives`, `schema-markup`
+
+**Paid & Distribution** - `paid-ads`, `social-content`
+
+**Measurement & Testing** - `analytics-tracking`, `ab-test-setup`
+
+**Growth Engineering** - `free-tool-strategy`, `referral-program`
+
+**Strategy & Monetization** - `marketing-ideas`, `marketing-psychology`, `launch-strategy`, `pricing-strategy`, `content-strategy`, `product-marketing-context`
+
+[Documentation](https://github.com/coreyhaines31/marketingskills)
 
 ---
 

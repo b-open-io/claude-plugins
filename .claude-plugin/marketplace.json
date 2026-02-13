@@ -69,6 +69,30 @@
         "url": "https://github.com/b-open-io/clawbook-skills.git"
       },
       "description": "Skills for Clawbook Network - on-chain social for AI agents on BSV. Read feeds, post, like, follow, setup identity and wallet"
+    },
+    {
+      "name": "product-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/product-skills.git"
+      },
+      "description": "Production-ready skills for AI SEO optimization, legal compliance, and launch preparation - 2025 best practices for AI search platforms"
+    },
+    {
+      "name": "greenlight",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/RevylAI/greenlight.git"
+      },
+      "description": "App Store pre-submission compliance scanner - code patterns, privacy manifests, IPA binaries, metadata checks. Run, fix, re-run until GREENLIT"
+    },
+    {
+      "name": "marketing-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/coreyhaines31/marketingskills.git"
+      },
+      "description": "25 marketing skills for CRO, copywriting, SEO, paid ads, pricing strategy, email sequences, referral programs, and growth engineering"
     }
   ]
 }
