@@ -85,6 +85,14 @@
         "url": "https://github.com/coreyhaines31/marketingskills.git"
       },
       "description": "25 marketing skills for CRO, copywriting, SEO, paid ads, pricing strategy, email sequences, referral programs, and growth engineering"
+    },
+    {
+      "name": "x402",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/calgooon/x402.git"
+      },
+      "description": "BSV-authenticated and paid API requests - BRC-31 auth, 402 micropayments, and automatic refund handling via MetaNet Client"
     }
   ]
 }
