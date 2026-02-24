@@ -1,3 +1,5 @@
+![bOpen Marketplace](./social-share.jpg)
+
 # bOpen Marketplace
 
 Plugin marketplace for Claude Code. BSV blockchain operations, AI tools, marketing, compliance, and developer utilities.
@@ -20,16 +22,16 @@ Then install any plugin:
 
 | Plugin | Description | Install |
 |--------|-------------|---------|
-| [bsv-skills](#bsv-skills) | 24 skills for BSV wallets, identity, transactions, standards | `/plugin install bsv-skills@b-open-io` |
+| [bsv-skills](#bsv-skills) | Skills for BSV wallets, identity, transactions, and standards | `/plugin install bsv-skills@b-open-io` |
 | [1sat-skills](#1sat-skills) | 1Sat Ordinals minting, media extraction, marketplace | `/plugin install 1sat-skills@b-open-io` |
-| [bopen-tools](#bopen-tools) | 19 agents, 9 skills, hooks for development workflows | `/plugin install bopen-tools@b-open-io` |
+| [bopen-tools](#bopen-tools) | Agents, skills, and hooks for development workflows | `/plugin install bopen-tools@b-open-io` |
 | [gemskills](#gemskills) | Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
 | [sigma-auth](#sigma-auth) | Bitcoin-native OAuth with BAP identity | `/plugin install sigma-auth@b-open-io` |
 | [clawbook-skills](#clawbook-skills) | On-chain social for AI agents — post, like, follow on BSV | `/plugin install clawbook-skills@b-open-io` |
 | [peacock](#peacock) | VSCode theme integration with 24-bit statusline | `/plugin install peacock@b-open-io` |
 | [clawnet-bot](#clawnet-bot) | Bot templates and skills for ClawNet AI agent platform | `/plugin install clawnet-bot@b-open-io` |
 | [product-skills](#product-skills) | AI SEO optimization, legal compliance, launch prep | `/plugin install product-skills@b-open-io` |
-| [marketing-skills](#marketing-skills) | 25 marketing skills for CRO, copy, SEO, ads, growth | `/plugin install marketing-skills@b-open-io` |
+| [marketing-skills](#marketing-skills) | Skills for CRO, copy, SEO, ads, and growth | `/plugin install marketing-skills@b-open-io` |
 
 ---
 
@@ -109,7 +111,7 @@ Development workflow automation.
 /plugin install bopen-tools@b-open-io
 ```
 
-**Agents** (19 specialized sub-agents)
+**Agents**
 
 | Agent | Focus |
 |-------|-------|
@@ -287,7 +289,7 @@ AI SEO optimization and product launch preparation.
 
 ## marketing-skills
 
-25 marketing skills by [Corey Haines](https://corey.co).
+Marketing skills by [Corey Haines](https://corey.co).
 
 ```bash
 /plugin install marketing-skills@b-open-io
