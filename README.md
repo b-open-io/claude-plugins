@@ -28,10 +28,11 @@ Then install any plugin:
 | [gemskills](#gemskills) | Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
 | [sigma-auth](#sigma-auth) | Bitcoin-native OAuth with BAP identity | `/plugin install sigma-auth@b-open-io` |
 | [clawbook-skills](#clawbook-skills) | On-chain social for AI agents — post, like, follow on BSV | `/plugin install clawbook-skills@b-open-io` |
-| [peacock](#peacock) | VSCode theme integration with 24-bit statusline | `/plugin install peacock@b-open-io` |
-| [clawnet-bot](#clawnet-bot) | Bot templates and skills for ClawNet AI agent platform | `/plugin install clawnet-bot@b-open-io` |
 | [product-skills](#product-skills) | AI SEO optimization, legal compliance, launch prep | `/plugin install product-skills@b-open-io` |
 | [marketing-skills](#marketing-skills) | Skills for CRO, copy, SEO, ads, and growth | `/plugin install marketing-skills@b-open-io` |
+| [send-secret](#send-secret) | P2P encrypted secret sharing without exposing content to the agent | `/plugin install send-secret@b-open-io` |
+| [claude-perms](#claude-perms) | TUI permission analyzer for tool usage and approval management | `/plugin install claude-perms@b-open-io` |
+| [x402](#x402) | BSV-authenticated and paid API requests with micropayments | `/plugin install x402@b-open-io` |
 
 ---
 
@@ -170,6 +171,7 @@ AI-powered image operations via Google Gemini.
 - `edit-image` - Inpainting and outpainting
 - `generate-svg` - Scalable vector graphics
 - `segment-image` - Object segmentation and masking
+- `deck-creator` - Presentation decks with AI-generated slides
 
 **Requirements:** `GEMINI_API_KEY` from [Google AI Studio](https://aistudio.google.com/apikey)
 
@@ -217,57 +219,6 @@ On-chain social network skills for AI agents.
 
 ---
 
-## peacock
-
-VSCode Peacock theme integration with Claude Code statusline.
-
-```bash
-/plugin install peacock@b-open-io
-```
-
-- Automatic theme detection from `.vscode/settings.json`
-- 24-bit true color support
-- Project-aware statusline with CWD tracking
-- Git branch and lint status display
-- iTerm2 tab color matching
-
-After install, run `/peacock:setup` and restart Claude Code.
-
-[Documentation](https://github.com/b-open-io/claude-peacock)
-
----
-
-## clawnet-bot
-
-Bot templates and skills for the ClawNet AI agent platform.
-
-```bash
-/plugin install clawnet-bot@b-open-io
-```
-
-**Templates**
-- `moltbook` - Moltbook social network integration (default)
-- `minimal` - Bare bones HTTP server starter
-- `blockchain` - BSV-focused with Bitcoin authentication
-
-**Skills**
-- `convex` - Convex database persistence
-- `moltbook-example` - Moltbook API client and social tools
-- `vercel-blob` - File storage with Vercel Blob
-
-**Usage:**
-```bash
-# Install skill
-bunx skills add b-open-io/clawnet-bot --skill convex
-
-# Use template
-clawnet bot init --template moltbook
-```
-
-[Documentation](https://github.com/b-open-io/clawnet-bot)
-
----
-
 ## product-skills
 
 AI SEO optimization and product launch preparation.
@@ -310,6 +261,52 @@ Marketing skills by [Corey Haines](https://corey.co).
 **Strategy & Monetization** - `marketing-ideas`, `marketing-psychology`, `launch-strategy`, `pricing-strategy`, `content-strategy`, `product-marketing-context`
 
 [Documentation](https://github.com/coreyhaines31/marketingskills)
+
+---
+
+## send-secret
+
+P2P encrypted secret sharing for AI workflows.
+
+```bash
+/plugin install send-secret@b-open-io
+```
+
+Send and receive secrets (API keys, passwords, tokens) between agents and users without exposing the content to the AI agent itself.
+
+[Documentation](https://github.com/danwag06/send-secret)
+
+---
+
+## claude-perms
+
+TUI permission analyzer for Claude Code.
+
+```bash
+/plugin install claude-perms@b-open-io
+```
+
+- Visualize tool usage frequency and approve/deny counts
+- Manage Claude Code permissions with live diff previews
+- Identify over-permissioned or under-permissioned tools
+
+[Documentation](https://github.com/b-open-io/claude-perms)
+
+---
+
+## x402
+
+BSV-authenticated and paid API requests.
+
+```bash
+/plugin install x402@b-open-io
+```
+
+- BRC-31 Bitcoin auth for API requests
+- 402 micropayment handling
+- Automatic refund handling via MetaNet Client
+
+[Documentation](https://github.com/calgooon/x402)
 
 ---
 
