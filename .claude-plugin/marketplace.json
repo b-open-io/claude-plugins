@@ -93,6 +93,14 @@
         "url": "https://github.com/calgooon/x402.git"
       },
       "description": "BSV-authenticated and paid API requests - BRC-31 auth, 402 micropayments, and automatic refund handling via MetaNet Client"
+    },
+    {
+      "name": "linear-sync",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/linear-sync.git"
+      },
+      "description": "Linear issue tracking wired into every commit — hooks that enforce issue IDs, sync GitHub↔Linear, inject context at session start, and draft progress comments"
     }
   ]
 }
