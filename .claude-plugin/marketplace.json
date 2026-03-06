@@ -101,6 +101,14 @@
         "url": "https://github.com/b-open-io/linear-sync.git"
       },
       "description": "Linear issue tracking wired into every commit — hooks that enforce issue IDs, sync GitHub↔Linear, inject context at session start, and draft progress comments"
+    },
+    {
+      "name": "peacock",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/claude-peacock.git"
+      },
+      "description": "Project color theming for your terminal — sets iTerm2 tab colors to match VSCode Peacock themes, with full color management commands"
     }
   ]
 }

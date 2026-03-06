@@ -33,6 +33,8 @@ Then install any plugin:
 | [send-secret](#send-secret) | P2P encrypted secret sharing without exposing content to the agent | `/plugin install send-secret@b-open-io` |
 | [claude-perms](#claude-perms) | TUI permission analyzer for tool usage and approval management | `/plugin install claude-perms@b-open-io` |
 | [x402](#x402) | BSV-authenticated and paid API requests with micropayments | `/plugin install x402@b-open-io` |
+| [linear-sync](#linear-sync) | Linear issue tracking wired into every commit | `/plugin install linear-sync@b-open-io` |
+| [peacock](#peacock) | Project color theming — iTerm2 tab colors from VSCode Peacock themes | `/plugin install peacock@b-open-io` |
 
 ---
 
@@ -307,6 +309,44 @@ BSV-authenticated and paid API requests.
 - Automatic refund handling via MetaNet Client
 
 [Documentation](https://github.com/calgooon/x402)
+
+---
+
+## linear-sync
+
+Linear issue tracking wired into every commit.
+
+```bash
+/plugin install linear-sync@b-open-io
+```
+
+- Hooks that enforce issue IDs in commits
+- GitHub-Linear bidirectional sync
+- Context injection at session start
+- Draft progress comments automatically
+
+[Documentation](https://github.com/b-open-io/linear-sync)
+
+---
+
+## peacock
+
+Project color theming for your terminal.
+
+```bash
+/plugin install peacock@b-open-io
+```
+
+- iTerm2 tab color automatically matches your project's VSCode Peacock theme
+- Color management commands: set, lighten, darken, favorites, reset
+- Reads from `.vscode/settings.json` (Peacock color or titleBar background)
+- Future: tmux, kitty support
+
+**Setup:** Run `/peacock:setup` after install, then restart Claude Code.
+
+**Requirements:** `jq`, terminal with 24-bit true color support
+
+[Documentation](https://github.com/b-open-io/claude-peacock)
 
 ---
 
