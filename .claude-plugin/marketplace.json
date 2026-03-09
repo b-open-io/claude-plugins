@@ -47,6 +47,14 @@
       "description": "Development agents, skills, hooks, and commands - 19 specialized agents, 9 skills, color theming, consolidated hooks"
     },
     {
+      "name": "clawnet-bot",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/clawnet-bot.git"
+      },
+      "description": "ClawNet bot templates, maintenance skills, and bot fleet operations helpers including Johnny the ClawNet mechanic"
+    },
+    {
       "name": "send-secret",
       "source": {
         "source": "url",
@@ -109,6 +117,14 @@
         "url": "https://github.com/b-open-io/claude-peacock.git"
       },
       "description": "Project color theming for your terminal — sets iTerm2 tab colors to match VSCode Peacock themes, with full color management commands"
+    },
+    {
+      "name": "bsv-mcp",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/bsv-mcp.git"
+      },
+      "description": "Bitcoin SV MCP server with interactive dashboard — Explorer, Wallet, and Ordinals via MCP Apps. Price, transactions, wallet, NFT marketplace."
     }
   ]
 }

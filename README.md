@@ -35,6 +35,7 @@ Then install any plugin:
 | [x402](#x402) | BSV-authenticated and paid API requests with micropayments | `/plugin install x402@b-open-io` |
 | [linear-sync](#linear-sync) | Linear issue tracking wired into every commit | `/plugin install linear-sync@b-open-io` |
 | [peacock](#peacock) | Project color theming — iTerm2 tab colors from VSCode Peacock themes | `/plugin install peacock@b-open-io` |
+| [bsv-mcp](#bsv-mcp) | Bitcoin SV MCP server with interactive dashboard via MCP Apps | `/plugin install bsv-mcp@b-open-io` |
 
 ---
 
@@ -347,6 +348,26 @@ Project color theming for your terminal.
 **Requirements:** `jq`, terminal with 24-bit true color support
 
 [Documentation](https://github.com/b-open-io/claude-peacock)
+
+---
+
+## bsv-mcp
+
+Bitcoin SV MCP server with interactive dashboard.
+
+```bash
+/plugin install bsv-mcp@b-open-io
+```
+
+- Interactive dashboard with Explorer, Wallet, and Ordinals tabs (MCP Apps)
+- BSV price lookup and chain info
+- Transaction decoding and address lookup
+- Wallet balance, UTXOs, and receive address
+- Ordinals marketplace listings and inscription search
+- BAP identity management
+- BSocial posts, likes, follows
+
+[Documentation](https://github.com/b-open-io/bsv-mcp)
 
 ---
 
