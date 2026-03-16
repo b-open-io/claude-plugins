@@ -34,7 +34,7 @@
       "name": "1sat-skills",
       "source": {
         "source": "url",
-        "url": "https://github.com/b-open-io/1sat-skills.git"
+        "url": "https://github.com/b-open-io/1sat-sdk.git"
       },
       "description": "1Sat Ordinals SDK operations - CLI tool, script templates, ordinals marketplace, token operations, wallet setup, and blockchain media extraction"
     },
