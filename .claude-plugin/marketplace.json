@@ -31,12 +31,12 @@
       "description": "Core BSV blockchain operations - backup management, BAP identity, wallet operations, BSocial posts, and blockchain utilities"
     },
     {
-      "name": "1sat-skills",
+      "name": "1sat",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/1sat-sdk.git"
       },
-      "description": "1Sat Ordinals SDK operations - CLI tool, script templates, ordinals marketplace, token operations, wallet setup, and blockchain media extraction"
+      "description": "1Sat Ordinals SDK — CLI tool, script templates, ordinals marketplace, token operations, wallet setup, and blockchain media extraction"
     },
     {
       "name": "bopen-tools",
