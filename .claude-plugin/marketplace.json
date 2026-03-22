@@ -125,6 +125,14 @@
         "url": "https://github.com/b-open-io/bsv-mcp.git"
       },
       "description": "Bitcoin SV MCP server with interactive dashboard — Explorer, Wallet, and Ordinals via MCP Apps. Price, transactions, wallet, NFT marketplace."
+    },
+    {
+      "name": "bigblocks",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/bigblocks-registry.git"
+      },
+      "description": "BigBlocks — shadcn-compatible block registry for Bitcoin applications. Build wallet, social, marketplace, and identity blocks using @1sat/* SDKs."
     }
   ]
 }
