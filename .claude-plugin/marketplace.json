@@ -133,6 +133,14 @@
         "url": "https://github.com/b-open-io/bigblocks-registry.git"
       },
       "description": "BigBlocks — shadcn-compatible block registry for Bitcoin applications. Build wallet, social, marketplace, and identity blocks using @1sat/* SDKs."
+    },
+    {
+      "name": "scribe",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/scribe-desktop.git"
+      },
+      "description": "Scribe work evidence aggregator — invoicing, project management, timeline tools, desktop app debugging"
     }
   ]
 }

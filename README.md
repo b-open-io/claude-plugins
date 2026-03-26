@@ -36,6 +36,7 @@ Then install any plugin:
 | [linear-sync](#linear-sync) | Linear issue tracking wired into every commit | `/plugin install linear-sync@b-open-io` |
 | [peacock](#peacock) | Project color theming — iTerm2 tab colors from VSCode Peacock themes | `/plugin install peacock@b-open-io` |
 | [bsv-mcp](#bsv-mcp) | Bitcoin SV MCP server with interactive dashboard via MCP Apps | `/plugin install bsv-mcp@b-open-io` |
+| [scribe](#scribe) | Work evidence aggregator with invoicing and timeline tools | `/plugin install scribe@b-open-io` |
 
 ---
 
@@ -368,6 +369,28 @@ Bitcoin SV MCP server with interactive dashboard.
 - BSocial posts, likes, follows
 
 [Documentation](https://github.com/b-open-io/bsv-mcp)
+
+---
+
+## scribe
+
+Work evidence timeline and invoicing toolkit.
+
+```bash
+/plugin install scribe@b-open-io
+```
+
+**Skills**
+- `companion` - CLI overview, getting started, command reference
+- `invoice` - Invoice creation, PDF generation, email delivery
+- `project` - Project management, root discovery, client linking
+- `release` - Desktop app release workflow with CI/CD
+- `debug-desktop` - Desktop app troubleshooting
+
+**Hooks**
+- Session start: injects `[SCRIBE-PROJECT]` context based on CWD
+
+[Documentation](https://github.com/b-open-io/scribe-desktop)
 
 ---
 
