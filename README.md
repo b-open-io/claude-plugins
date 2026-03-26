@@ -384,8 +384,6 @@ Work evidence timeline and invoicing toolkit.
 - `companion` - CLI overview, getting started, command reference
 - `invoice` - Invoice creation, PDF generation, email delivery
 - `project` - Project management, root discovery, client linking
-- `release` - Desktop app release workflow with CI/CD
-- `debug-desktop` - Desktop app troubleshooting
 
 **Hooks**
 - Session start: injects `[SCRIBE-PROJECT]` context based on CWD
