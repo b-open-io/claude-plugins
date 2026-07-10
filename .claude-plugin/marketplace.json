@@ -137,10 +137,12 @@
     {
       "name": "scribe",
       "source": {
-        "source": "url",
-        "url": "https://github.com/b-open-io/scribe-desktop.git"
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/scribe.git",
+        "path": "packages/cli",
+        "ref": "master"
       },
-      "description": "Scribe work evidence aggregator — invoicing, project management, timeline tools, desktop app debugging"
+      "description": "Scribe work evidence aggregator — invoicing, project management, timeline tools"
     }
   ]
 }
