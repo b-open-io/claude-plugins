@@ -47,6 +47,15 @@
       "description": "Cross-agent development skills, hooks, orchestration, and optional custom-agent adapters for Claude Code and Codex"
     },
     {
+      "name": "bopen-orchestration",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/orchestration"
+      },
+      "description": "Multi-agent orchestration — worker dispatch, second opinions, wave fan-out, and autonomous loops. Optional module for bopen-tools."
+    },
+    {
       "name": "clawnet-bot",
       "source": {
         "source": "url",
