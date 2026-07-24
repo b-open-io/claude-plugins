@@ -56,6 +56,14 @@
       "description": "Multi-agent orchestration — worker dispatch, second opinions, wave fan-out, and autonomous loops. Optional module for bopen-tools."
     },
     {
+      "name": "paperclip",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/paperclip-plugin.git"
+      },
+      "description": "Paperclip agent-organization plugin — CEO and CFO personas plus Paperclip plugin development guidance."
+    },
+    {
       "name": "clawnet-bot",
       "source": {
         "source": "url",
