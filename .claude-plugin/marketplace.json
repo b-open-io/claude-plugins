@@ -39,93 +39,93 @@
       "description": "1Sat Ordinals SDK — CLI tool, script templates, ordinals marketplace, token operations, wallet setup, and blockchain media extraction"
     },
     {
-      "name": "bopen-tools",
+      "name": "core",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/prompts.git"
       },
-      "description": "Cross-agent development skills, hooks, orchestration, and optional custom-agent adapters for Claude Code and Codex"
+      "description": "Cross-agent development skills, hooks, orchestration, and optional custom-agent adapters for Claude Code, Codex, and Grok Build"
     },
     {
-      "name": "bopen-orchestration",
+      "name": "orchestra",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
-        "path": "modules/orchestration"
+        "path": "modules/orchestra"
       },
-      "description": "Multi-agent orchestration — worker dispatch, second opinions, wave fan-out, and autonomous loops. Optional module for bopen-tools."
+      "description": "Multi-agent orchestration for Claude Code, Grok and Codex — worker dispatch, second opinions, wave fan-out, and autonomous loops. Optional module for core."
     },
     {
-      "name": "bopen-plugin-dev",
+      "name": "plugin-kit",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
-        "path": "modules/plugin-dev"
+        "path": "modules/plugin-kit"
       },
-      "description": "Authoring and releasing plugins: agent lifecycle, skill benchmarks, settings, and publishing. Optional module for bopen-tools."
+      "description": "Authoring and releasing plugins: agent lifecycle, skill benchmarks, settings, and publishing. Optional module for core."
     },
     {
-      "name": "bopen-review",
+      "name": "review",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/review"
       },
-      "description": "Code review, security auditing, and exploratory testing with visual review artifacts. Optional module for bopen-tools."
+      "description": "Code review, security auditing, and exploratory testing with visual review artifacts. Optional module for core."
     },
     {
-      "name": "bopen-web",
+      "name": "web-dev",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
-        "path": "modules/web"
+        "path": "modules/web-dev"
       },
-      "description": "Frontend development for Next.js and React: performance, component design, and browser inspection. Optional module for bopen-tools."
+      "description": "Frontend development for Next.js and React: performance, component design, and browser inspection. Optional module for core."
     },
     {
-      "name": "bopen-creative",
+      "name": "creative",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/creative"
       },
-      "description": "3D, shaders, game and desktop interfaces, UI audio themes, and generated media. Optional module for bopen-tools."
+      "description": "3D, shaders, game and desktop interfaces, UI audio themes, and generated media. Optional module for core."
     },
     {
-      "name": "bopen-mcp",
+      "name": "mcp-dev",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
-        "path": "modules/mcp"
+        "path": "modules/mcp-dev"
       },
-      "description": "MCP servers and MCP Apps, including the json-render framework for interactive in-chat UI. Optional module for bopen-tools."
+      "description": "MCP servers and MCP Apps, including the json-render framework for interactive in-chat UI. Optional module for core."
     },
     {
-      "name": "bopen-ops",
+      "name": "dev-ops",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
-        "path": "modules/ops"
+        "path": "modules/dev-ops"
       },
-      "description": "Deployment, CI, infrastructure health, spend tracking, and payment integrations. Optional module for bopen-tools."
+      "description": "Deployment, CI, infrastructure health, spend tracking, and payment integrations. Optional module for core."
     },
     {
-      "name": "bopen-research",
+      "name": "research",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/research"
       },
-      "description": "Multi-source research, X analysis, writing-style capture, and documentation. Optional module for bopen-tools."
+      "description": "Multi-source research, X analysis, writing-style capture, and documentation. Optional module for core."
     },
     {
-      "name": "bopen-public-agents",
+      "name": "brand-rep",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
-        "path": "modules/public-agents"
+        "path": "modules/brand-rep"
       },
-      "description": "Personas for public-facing surfaces that answer visitors rather than developers. Optional module for bopen-tools."
+      "description": "Personas for public-facing surfaces that answer customers rather than developers. Optional module for core."
     },
     {
       "name": "paperclip",
