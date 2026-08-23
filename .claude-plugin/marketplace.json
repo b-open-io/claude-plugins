@@ -36,7 +36,7 @@
         "source": "url",
         "url": "https://github.com/b-open-io/1sat-sdk.git"
       },
-      "description": "1Sat Ordinals SDK — CLI tool, script templates, ordinals marketplace, token operations, wallet setup, and blockchain media extraction"
+      "description": "1Sat SDK and agent skills — collection overlay guidance, CLI, ordinals, marketplace, tokens, wallets, indexing, and blockchain media"
     },
     {
       "name": "core",

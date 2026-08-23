@@ -23,8 +23,8 @@ Then install any plugin:
 | Plugin | Description | Install |
 |--------|-------------|---------|
 | [bsv-skills](#bsv-skills) | Skills for BSV wallets, identity, transactions, and standards | `/plugin install bsv-skills@b-open-io` |
-| [1sat-skills](#1sat-skills) | 1Sat Ordinals minting, media extraction, marketplace | `/plugin install 1sat-skills@b-open-io` |
-| [bopen-tools](#bopen-tools) | Agents, skills, and hooks for development workflows | `/plugin install bopen-tools@b-open-io` |
+| [1sat](#1sat) | 1Sat SDK guidance for collections, ordinals, indexing, tokens, wallets, and marketplace | `/plugin install 1sat@b-open-io` |
+| [core](#core) | Agents, skills, and hooks for development workflows | `/plugin install core@b-open-io` |
 | [gemskills](#gemskills) | Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
 | [sigma-auth](#sigma-auth) | Bitcoin-native OAuth with BAP identity | `/plugin install sigma-auth@b-open-io` |
 | [clawbook-skills](#clawbook-skills) | On-chain social for AI agents — post, like, follow on BSV | `/plugin install clawbook-skills@b-open-io` |
@@ -90,30 +90,35 @@ BSV blockchain development toolkit.
 
 ---
 
-## 1sat-skills
+## 1sat
 
-1Sat Ordinals NFT operations.
+1Sat SDK and ecosystem guidance for application development.
 
 ```bash
-/plugin install 1sat-skills@b-open-io
+/plugin install 1sat@b-open-io
 ```
 
-- `extract-blockchain-media` - Extract media from transactions
-- `wallet-create-ordinals` - Mint inscriptions
-- `ordinals-marketplace` - Browse GorillaPool marketplace
+- `collections` - Collection overlay admission, topics, routes, and SDK compatibility
+- `ordinals-create` - Mint inscriptions and ordinary NFTs
+- `ordinals-marketplace` - List, buy, cancel, transfer, and browse ordinals
+- `stack-api` - Unified 1sat-stack indexing and broadcast API
+- `blockchain-media` - Access on-chain media through ORDFS
+- `tokens` - BSV20 and BSV21 token operations
+- `wallet-setup` and `dapp-connect` - Wallet engine and browser connection guidance
 
-**Requirements:** `txex` CLI, `js-1sat-ord` package
+The collection skill distinguishes the shipped stack admission contract from
+SDK helpers that are still proposed or unreleased.
 
-[Documentation](https://github.com/b-open-io/1sat-skills)
+[Documentation](https://github.com/b-open-io/1sat-sdk)
 
 ---
 
-## bopen-tools
+## core
 
 Development workflow automation.
 
 ```bash
-/plugin install bopen-tools@b-open-io
+/plugin install core@b-open-io
 ```
 
 **Agents**
