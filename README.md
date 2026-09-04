@@ -24,6 +24,7 @@ Then install any plugin:
 |--------|-------------|---------|
 | [bsv-skills](#bsv-skills) | Skills for BSV wallets, identity, transactions, and standards | `/plugin install bsv-skills@b-open-io` |
 | [1sat-skills](#1sat-skills) | 1Sat Ordinals minting, media extraction, marketplace | `/plugin install 1sat-skills@b-open-io` |
+| [bitplan](#bitplan) | Encrypted, versioned HTML plans controlled by a BRC-100 wallet | `/plugin install bitplan@b-open-io` |
 | [bopen-tools](#bopen-tools) | Agents, skills, and hooks for development workflows | `/plugin install bopen-tools@b-open-io` |
 | [gemskills](#gemskills) | Gemini AI image generation, analysis, editing | `/plugin install gemskills@b-open-io` |
 | [sigma-auth](#sigma-auth) | Bitcoin-native OAuth with BAP identity | `/plugin install sigma-auth@b-open-io` |
@@ -105,6 +106,21 @@ BSV blockchain development toolkit.
 **Requirements:** `txex` CLI, `js-1sat-ord` package
 
 [Documentation](https://github.com/b-open-io/1sat-skills)
+
+## bitplan
+
+Create encrypted HTML plans, keep ciphertext hosted while a draft changes,
+and publish a finished version as a 1Sat Ordinal. The skill is maintained in
+the BitPlan repository and installed directly from that source.
+
+```bash
+/plugin install bitplan@b-open-io
+```
+
+BitPlan uses a compatible BRC-100 wallet for encryption and approval. It never
+asks an agent to handle a mnemonic, private key, or wallet password.
+
+[Documentation](https://bitplan.dev/docs/agents)
 
 ---
 
