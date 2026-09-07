@@ -1,0 +1,343 @@
+{
+  "name": "b-open-io",
+  "interface": {
+    "displayName": "bOpen"
+  },
+  "plugins": [
+    {
+      "name": "sigma-auth",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/better-auth-plugin.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "gemskills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/gemskills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "bsv-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/bsv-skills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "1sat",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/1sat-sdk.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "core",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/prompts.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "orchestra",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/orchestra"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "plugin-kit",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/plugin-kit"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "review",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/review"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "web-dev",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/web-dev"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "creative",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/creative"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "mcp-dev",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/mcp-dev"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dev-ops",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/dev-ops"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "research",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/research"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "brand-rep",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/prompts.git",
+        "path": "modules/brand-rep"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "paperclip",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/paperclip-plugin.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "clawnet-bot",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/clawnet-bot.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "send-secret",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/danwag06/send-secret.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "claude-perms",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/claude-perms.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "clawbook-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/clawbook-skills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "product-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/product-skills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "marketing-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/coreyhaines31/marketingskills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "x402",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/calgooon/x402.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "linear-sync",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/linear-sync.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "peacock",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/claude-peacock.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "bsv-mcp",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/bsv-mcp.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "bigblocks",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/b-open-io/bigblocks-registry.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "scribe",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/b-open-io/scribe.git",
+        "path": "packages/cli",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
