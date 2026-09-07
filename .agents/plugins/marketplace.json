@@ -1,7 +1,7 @@
 {
-  "name": "b-open-io",
+  "name": "bopen-marketplace",
   "interface": {
-    "displayName": "bOpen"
+    "displayName": "bOpen Plugins"
   },
   "plugins": [
     {
