@@ -8,238 +8,761 @@
   "plugins": [
     {
       "name": "sigma-auth",
+      "displayName": "Sigma Auth",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/better-auth-plugin.git"
       },
-      "description": "Sigma Auth - Bitcoin-native OAuth with Better Auth, BAP identity, bitcoin-auth diagnostics, and comprehensive setup guides"
+      "description": "Sigma Auth - Bitcoin-native OAuth with Better Auth, BAP identity, bitcoin-auth diagnostics, and comprehensive setup guides",
+      "homepage": "https://bopen.ai/plugins/sigma-auth",
+      "category": "Authentication",
+      "keywords": [
+        "oauth",
+        "better-auth",
+        "bitcoin",
+        "bap",
+        "identity",
+        "passkeys"
+      ],
+      "relevance": {
+        "topic": "Sigma Auth",
+        "signals": {
+          "hosts": [
+            "auth.sigmaidentity.com"
+          ],
+          "manifestDeps": [
+            {
+              "file": "[/\\\\]package\\.json$",
+              "pattern": "\\\"(@sigma-auth/better-auth-plugin|better-auth)\\\"\\s*:"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "gemskills",
+      "displayName": "Gemskills",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/gemskills.git"
       },
-      "description": "Gemini 3.0 Pro skills - text generation, image generation, upscaling, editing, SVG creation, and segmentation"
+      "description": "Gemini 3.0 Pro skills - text generation, image generation, upscaling, editing, SVG creation, and segmentation",
+      "homepage": "https://bopen.ai/plugins/gemskills",
+      "category": "Media",
+      "keywords": [
+        "gemini",
+        "image-generation",
+        "video",
+        "svg",
+        "upscaling",
+        "openai-images"
+      ],
+      "relevance": {
+        "topic": "image generation",
+        "signals": {
+          "hosts": [
+            "generativelanguage.googleapis.com",
+            "api.openai.com"
+          ],
+          "manifestDeps": [
+            {
+              "file": "[/\\\\]package\\.json$",
+              "pattern": "\\\"@google/genai\\\"\\s*:"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "bsv-skills",
+      "displayName": "BSV Skills",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/bsv-skills.git"
       },
-      "description": "Core BSV blockchain operations - backup management, BAP identity, wallet operations, BSocial posts, and blockchain utilities"
+      "description": "Core BSV blockchain operations - backup management, BAP identity, wallet operations, BSocial posts, and blockchain utilities",
+      "homepage": "https://bopen.ai/plugins/bsv-skills",
+      "category": "Bitcoin",
+      "keywords": [
+        "bsv",
+        "bitcoin",
+        "wallet",
+        "bap",
+        "bsocial",
+        "transactions"
+      ],
+      "relevance": {
+        "topic": "BSV",
+        "signals": {
+          "manifestDeps": [
+            {
+              "file": "[/\\\\]package\\.json$",
+              "pattern": "\\\"@bsv/sdk\\\"\\s*:"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "1sat",
+      "displayName": "1Sat",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/1sat-sdk.git"
       },
-      "description": "1Sat Ordinals SDK — CLI tool, script templates, ordinals marketplace, token operations, wallet setup, and blockchain media extraction"
+      "description": "1Sat Ordinals SDK — CLI tool, script templates, ordinals marketplace, token operations, wallet setup, and blockchain media extraction",
+      "homepage": "https://bopen.ai/plugins/1sat",
+      "category": "Bitcoin",
+      "keywords": [
+        "1sat",
+        "ordinals",
+        "bsv21",
+        "wallet",
+        "marketplace",
+        "opns"
+      ],
+      "relevance": {
+        "topic": "1Sat Ordinals",
+        "signals": {
+          "hosts": [
+            "ordinals.gorillapool.io",
+            "1sat.app"
+          ],
+          "manifestDeps": [
+            {
+              "file": "[/\\\\]package\\.json$",
+              "pattern": "\\\"(js-1sat-ord|@1sat/[a-z0-9-]+)\\\"\\s*:"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "bitplan",
+      "displayName": "BitPlan",
       "source": {
         "source": "url",
         "url": "https://github.com/opldotdev/bitplan.dev.git"
       },
-      "description": "BitPlan — encrypted, wallet-controlled HTML plans that stay hosted while changing and can be published as 1Sat Ordinals"
+      "description": "BitPlan — encrypted, wallet-controlled HTML plans that stay hosted while changing and can be published as 1Sat Ordinals",
+      "homepage": "https://bopen.ai/plugins/bitplan",
+      "category": "Bitcoin",
+      "keywords": [
+        "bitplan",
+        "plans",
+        "html",
+        "encrypted",
+        "ordinals"
+      ],
+      "relevance": {
+        "topic": "BitPlan",
+        "signals": {
+          "cli": [
+            "bitplan"
+          ],
+          "hosts": [
+            "bitplan.dev"
+          ]
+        }
+      }
     },
     {
       "name": "core",
+      "displayName": "bOpen Core",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/prompts.git"
       },
-      "description": "Cross-agent development skills, hooks, orchestration, and optional custom-agent adapters for Claude Code, Codex, and Grok Build"
+      "description": "Cross-agent development skills, hooks, orchestration, and optional custom-agent adapters for Claude Code, Codex, and Grok Build",
+      "homepage": "https://bopen.ai/plugins/core",
+      "category": "Developer Tools",
+      "keywords": [
+        "agents",
+        "skills",
+        "hooks",
+        "orchestration",
+        "claude-code",
+        "codex"
+      ],
+      "relevance": {
+        "topic": "agent workflows",
+        "signals": {
+          "filesRead": [
+            "**/CLAUDE.md",
+            "**/AGENTS.md"
+          ]
+        }
+      }
     },
     {
       "name": "orchestra",
+      "displayName": "Orchestra",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/orchestra"
       },
-      "description": "Multi-agent orchestration for Claude Code, Grok and Codex — worker dispatch, second opinions, wave fan-out, and autonomous loops. Optional module for core."
+      "description": "Multi-agent orchestration for Claude Code, Grok and Codex — worker dispatch, second opinions, wave fan-out, and autonomous loops. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/orchestra",
+      "category": "Developer Tools",
+      "keywords": [
+        "orchestration",
+        "multi-agent",
+        "workers",
+        "codex",
+        "opencode"
+      ],
+      "relevance": {
+        "topic": "multi-agent orchestration",
+        "signals": {
+          "cli": [
+            "codex",
+            "opencode"
+          ]
+        }
+      }
     },
     {
       "name": "plugin-kit",
+      "displayName": "Plugin Kit",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/plugin-kit"
       },
-      "description": "Authoring and releasing plugins: agent lifecycle, skill benchmarks, settings, and publishing. Optional module for core."
+      "description": "Authoring and releasing plugins: agent lifecycle, skill benchmarks, settings, and publishing. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/plugin-kit",
+      "category": "Developer Tools",
+      "keywords": [
+        "plugins",
+        "skills",
+        "agents",
+        "publishing",
+        "benchmarks"
+      ],
+      "relevance": {
+        "topic": "Claude Code plugins",
+        "signals": {
+          "filesRead": [
+            "**/.claude-plugin/plugin.json",
+            "**/.codex-plugin/plugin.json",
+            "**/skills/*/SKILL.md"
+          ]
+        }
+      }
     },
     {
       "name": "review",
+      "displayName": "Review",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/review"
       },
-      "description": "Code review, security auditing, and exploratory testing with visual review artifacts. Optional module for core."
+      "description": "Code review, security auditing, and exploratory testing with visual review artifacts. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/review",
+      "category": "Developer Tools",
+      "keywords": [
+        "code-review",
+        "security",
+        "semgrep",
+        "codeql",
+        "testing"
+      ],
+      "relevance": {
+        "topic": "code review",
+        "signals": {
+          "cli": [
+            "semgrep",
+            "codeql"
+          ]
+        }
+      }
     },
     {
       "name": "web-dev",
+      "displayName": "Web Dev",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/web-dev"
       },
-      "description": "Frontend development for Next.js and React: performance, component design, and browser inspection. Optional module for core."
+      "description": "Frontend development for Next.js and React: performance, component design, and browser inspection. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/web-dev",
+      "category": "Developer Tools",
+      "keywords": [
+        "nextjs",
+        "react",
+        "frontend",
+        "performance",
+        "design"
+      ],
+      "relevance": {
+        "topic": "Next.js",
+        "signals": {
+          "cli": [
+            "next"
+          ],
+          "manifestDeps": [
+            {
+              "file": "[/\\\\]package\\.json$",
+              "pattern": "\\\"next\\\"\\s*:"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "creative",
+      "displayName": "Creative",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/creative"
       },
-      "description": "3D, shaders, game and desktop interfaces, UI audio themes, and generated media. Optional module for core."
+      "description": "3D, shaders, game and desktop interfaces, UI audio themes, and generated media. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/creative",
+      "category": "Media",
+      "keywords": [
+        "threejs",
+        "shaders",
+        "game-ui",
+        "macos",
+        "audio",
+        "remotion"
+      ],
+      "relevance": {
+        "topic": "3D and native apps",
+        "signals": {
+          "cli": [
+            "xcodebuild",
+            "swift"
+          ],
+          "manifestDeps": [
+            {
+              "file": "[/\\\\]package\\.json$",
+              "pattern": "\\\"(three|@react-three/fiber|remotion)\\\"\\s*:"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "mcp-dev",
+      "displayName": "MCP Dev",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/mcp-dev"
       },
-      "description": "MCP servers and MCP Apps, including the json-render framework for interactive in-chat UI. Optional module for core."
+      "description": "MCP servers and MCP Apps, including the json-render framework for interactive in-chat UI. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/mcp-dev",
+      "category": "Developer Tools",
+      "keywords": [
+        "mcp",
+        "mcp-apps",
+        "json-render",
+        "servers"
+      ],
+      "relevance": {
+        "topic": "MCP",
+        "signals": {
+          "filesRead": [
+            "**/.mcp.json",
+            "**/mcp.json"
+          ],
+          "manifestDeps": [
+            {
+              "file": "[/\\\\]package\\.json$",
+              "pattern": "\\\"@modelcontextprotocol/sdk\\\"\\s*:"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "dev-ops",
+      "displayName": "Dev Ops",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/dev-ops"
       },
-      "description": "Deployment, CI, infrastructure health, spend tracking, and payment integrations. Optional module for core."
+      "description": "Deployment, CI, infrastructure health, spend tracking, and payment integrations. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/dev-ops",
+      "category": "Developer Tools",
+      "keywords": [
+        "deployment",
+        "vercel",
+        "railway",
+        "ci",
+        "cost-tracking",
+        "payments"
+      ],
+      "relevance": {
+        "topic": "deployment",
+        "signals": {
+          "cli": [
+            "vercel",
+            "railway"
+          ],
+          "filesRead": [
+            "**/vercel.json",
+            "**/vercel.ts",
+            "**/.github/workflows/*.yml"
+          ]
+        }
+      }
     },
     {
       "name": "research",
+      "displayName": "Research",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/research"
       },
-      "description": "Multi-source research, X analysis, writing-style capture, and documentation. Optional module for core."
+      "description": "Multi-source research, X analysis, writing-style capture, and documentation. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/research",
+      "category": "Productivity",
+      "keywords": [
+        "research",
+        "x",
+        "twitter",
+        "documentation",
+        "personas"
+      ],
+      "relevance": {
+        "topic": "research",
+        "signals": {
+          "hosts": [
+            "api.x.com"
+          ]
+        }
+      }
     },
     {
       "name": "brand-rep",
+      "displayName": "Brand Rep",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/prompts.git",
         "path": "modules/brand-rep"
       },
-      "description": "Personas for public-facing surfaces that answer customers rather than developers. Optional module for core."
+      "description": "Personas for public-facing surfaces that answer customers rather than developers. Optional module for core.",
+      "homepage": "https://bopen.ai/plugins/brand-rep",
+      "category": "Marketing",
+      "keywords": [
+        "social",
+        "x",
+        "personas",
+        "customer-facing",
+        "scheduling"
+      ],
+      "relevance": {
+        "topic": "social posting",
+        "signals": {
+          "hosts": [
+            "bopen.ai"
+          ]
+        }
+      }
     },
     {
       "name": "paperclip",
+      "displayName": "Paperclip",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/paperclip-plugin.git"
       },
-      "description": "Paperclip agent-organization plugin — CEO and CFO personas plus Paperclip plugin development guidance."
+      "description": "Paperclip agent-organization plugin — CEO and CFO personas plus Paperclip plugin development guidance.",
+      "homepage": "https://bopen.ai/plugins/paperclip",
+      "category": "Productivity",
+      "keywords": [
+        "paperclip",
+        "agent-org",
+        "ceo",
+        "cfo"
+      ],
+      "relevance": {
+        "topic": "Paperclip",
+        "signals": {
+          "cli": [
+            "paperclip"
+          ]
+        }
+      }
     },
     {
       "name": "clawnet-bot",
+      "displayName": "ClawNet Bot",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/clawnet-bot.git"
       },
-      "description": "ClawNet bot templates, maintenance skills, and bot fleet operations helpers including Johnny the ClawNet mechanic"
+      "description": "ClawNet bot templates, maintenance skills, and bot fleet operations helpers including Johnny the ClawNet mechanic",
+      "homepage": "https://bopen.ai/plugins/clawnet-bot",
+      "category": "Developer Tools",
+      "keywords": [
+        "clawnet",
+        "bots",
+        "fleet",
+        "convex",
+        "vercel-blob"
+      ]
     },
     {
       "name": "send-secret",
+      "displayName": "Send Secret",
       "source": {
         "source": "url",
         "url": "https://github.com/danwag06/send-secret.git"
       },
-      "description": "P2P encrypted secret sharing skills - send and receive secrets without exposing content to the agent"
+      "description": "P2P encrypted secret sharing skills - send and receive secrets without exposing content to the agent",
+      "homepage": "https://bopen.ai/plugins/send-secret",
+      "category": "Security",
+      "keywords": [
+        "secrets",
+        "encryption",
+        "p2p"
+      ]
     },
     {
       "name": "claude-perms",
+      "displayName": "Claude Perms",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/claude-perms.git"
       },
-      "description": "TUI permission analyzer - visualize tool usage frequency, approve/deny counts, and manage Claude Code permissions with live diff previews"
+      "description": "TUI permission analyzer - visualize tool usage frequency, approve/deny counts, and manage Claude Code permissions with live diff previews",
+      "homepage": "https://bopen.ai/plugins/claude-perms",
+      "category": "Developer Tools",
+      "keywords": [
+        "permissions",
+        "settings",
+        "tui",
+        "claude-code"
+      ],
+      "relevance": {
+        "topic": "Claude Code permissions",
+        "signals": {
+          "filesRead": [
+            "**/.claude/settings.json",
+            "**/.claude/settings.local.json"
+          ]
+        }
+      }
     },
     {
       "name": "clawbook-skills",
+      "displayName": "Clawbook Skills",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/clawbook-skills.git"
       },
-      "description": "Skills for Clawbook Network - on-chain social for AI agents on BSV. Read feeds, post, like, follow, setup identity and wallet"
+      "description": "Skills for Clawbook Network - on-chain social for AI agents on BSV. Read feeds, post, like, follow, setup identity and wallet",
+      "homepage": "https://bopen.ai/plugins/clawbook-skills",
+      "category": "Bitcoin",
+      "keywords": [
+        "clawbook",
+        "social",
+        "agents",
+        "bsv",
+        "feeds"
+      ]
     },
     {
       "name": "product-skills",
+      "displayName": "Product Skills",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/product-skills.git"
       },
-      "description": "Production-ready skills for AI SEO optimization, legal compliance, and launch preparation - 2025 best practices for AI search platforms"
+      "description": "Production-ready skills for AI SEO optimization, legal compliance, and launch preparation - 2025 best practices for AI search platforms",
+      "homepage": "https://bopen.ai/plugins/product-skills",
+      "category": "Marketing",
+      "keywords": [
+        "seo",
+        "legal",
+        "compliance",
+        "soc2",
+        "launch"
+      ]
     },
     {
       "name": "marketing-skills",
+      "displayName": "Marketing Skills",
       "source": {
         "source": "url",
         "url": "https://github.com/coreyhaines31/marketingskills.git"
       },
-      "description": "25 marketing skills for CRO, copywriting, SEO, paid ads, pricing strategy, email sequences, referral programs, and growth engineering"
+      "description": "25 marketing skills for CRO, copywriting, SEO, paid ads, pricing strategy, email sequences, referral programs, and growth engineering",
+      "homepage": "https://bopen.ai/plugins/marketing-skills",
+      "category": "Marketing",
+      "keywords": [
+        "marketing",
+        "cro",
+        "copywriting",
+        "seo",
+        "ads",
+        "pricing"
+      ]
     },
     {
       "name": "x402",
+      "displayName": "x402",
       "source": {
         "source": "url",
         "url": "https://github.com/calgooon/x402.git"
       },
-      "description": "BSV-authenticated and paid API requests - BRC-31 auth, 402 micropayments, and automatic refund handling via MetaNet Client"
+      "description": "BSV-authenticated and paid API requests - BRC-31 auth, 402 micropayments, and automatic refund handling via MetaNet Client",
+      "homepage": "https://bopen.ai/plugins/x402",
+      "category": "Bitcoin",
+      "keywords": [
+        "x402",
+        "payments",
+        "brc-31",
+        "micropayments",
+        "api"
+      ]
     },
     {
       "name": "linear-sync",
+      "displayName": "Linear Sync",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/linear-sync.git"
       },
-      "description": "Linear issue tracking wired into every commit — hooks that enforce issue IDs, sync GitHub↔Linear, inject context at session start, and draft progress comments"
+      "description": "Linear issue tracking wired into every commit — hooks that enforce issue IDs, sync GitHub↔Linear, inject context at session start, and draft progress comments",
+      "homepage": "https://bopen.ai/plugins/linear-sync",
+      "category": "Productivity",
+      "keywords": [
+        "linear",
+        "issues",
+        "git-hooks",
+        "github",
+        "planning"
+      ],
+      "relevance": {
+        "topic": "Linear",
+        "signals": {
+          "filesRead": [
+            "**/.claude/linear-sync.json"
+          ],
+          "hosts": [
+            "api.linear.app"
+          ]
+        }
+      }
     },
     {
       "name": "peacock",
+      "displayName": "Peacock",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/claude-peacock.git"
       },
-      "description": "Project color theming for your terminal — sets iTerm2 tab colors to match VSCode Peacock themes, with full color management commands"
+      "description": "Project color theming for your terminal — sets iTerm2 tab colors to match VSCode Peacock themes, with full color management commands",
+      "homepage": "https://bopen.ai/plugins/peacock",
+      "category": "Developer Tools",
+      "keywords": [
+        "iterm2",
+        "colors",
+        "theming",
+        "vscode",
+        "peacock"
+      ],
+      "relevance": {
+        "topic": "workspace colors",
+        "signals": {
+          "filesRead": [
+            "**/.vscode/settings.json"
+          ]
+        }
+      }
     },
     {
       "name": "bsv-mcp",
+      "displayName": "BSV MCP",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/bsv-mcp.git"
       },
-      "description": "Bitcoin SV MCP server with interactive dashboard — Explorer, Wallet, and Ordinals via MCP Apps. Price, transactions, wallet, NFT marketplace."
+      "description": "Bitcoin SV MCP server with interactive dashboard — Explorer, Wallet, and Ordinals via MCP Apps. Price, transactions, wallet, NFT marketplace.",
+      "homepage": "https://bopen.ai/plugins/bsv-mcp",
+      "category": "Bitcoin",
+      "keywords": [
+        "bsv",
+        "mcp",
+        "explorer",
+        "wallet",
+        "ordinals"
+      ],
+      "relevance": {
+        "topic": "BSV",
+        "signals": {
+          "hosts": [
+            "api.whatsonchain.com"
+          ]
+        }
+      }
     },
     {
       "name": "bigblocks",
+      "displayName": "BigBlocks",
       "source": {
         "source": "url",
         "url": "https://github.com/b-open-io/bigblocks.git"
       },
-      "description": "BigBlocks — shadcn-compatible block registry for Bitcoin applications. Build wallet, social, marketplace, and identity blocks using @1sat/* SDKs."
+      "description": "BigBlocks — shadcn-compatible block registry for Bitcoin applications. Build wallet, social, marketplace, and identity blocks using @1sat/* SDKs.",
+      "homepage": "https://bopen.ai/plugins/bigblocks",
+      "category": "Bitcoin",
+      "keywords": [
+        "bigblocks",
+        "shadcn",
+        "components",
+        "wallet",
+        "registry"
+      ],
+      "relevance": {
+        "topic": "BigBlocks",
+        "signals": {
+          "manifestDeps": [
+            {
+              "file": "[/\\\\]package\\.json$",
+              "pattern": "\\\"bigblocks\\\"\\s*:"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "scribe",
+      "displayName": "Scribe",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/b-open-io/scribe.git",
         "path": "packages/cli",
         "ref": "master"
       },
-      "description": "Scribe work evidence aggregator — invoicing, project management, timeline tools"
+      "description": "Scribe work evidence aggregator — invoicing, project management, timeline tools",
+      "homepage": "https://bopen.ai/plugins/scribe",
+      "category": "Productivity",
+      "keywords": [
+        "scribe",
+        "invoicing",
+        "work-evidence",
+        "projects",
+        "reporting"
+      ],
+      "relevance": {
+        "topic": "Scribe",
+        "signals": {
+          "cli": [
+            "scribe"
+          ]
+        }
+      }
     }
   ]
 }

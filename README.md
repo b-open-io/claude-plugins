@@ -15,6 +15,32 @@ The OpenAI catalog is `.agents/plugins/marketplace.json`; the Claude catalog
 remains `.claude-plugin/marketplace.json`. Both list the existing plugin sources.
 Individual plugins may support different clients.
 
+## Org-level plugin suggestions
+
+Every first-party entry in `.claude-plugin/marketplace.json` carries a
+`relevance` block, so Claude Code can suggest the plugin when a session
+matches its signals (working directory, commands run, hosts contacted, files
+read, or package manifests). Suggestions only appear for marketplaces an
+administrator allowlists in managed settings. Add this to your org's
+`managed-settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "b-open-io": {
+      "source": {
+        "source": "github",
+        "repo": "b-open-io/claude-plugins"
+      }
+    }
+  },
+  "pluginSuggestionMarketplaces": ["b-open-io"]
+}
+```
+
+Claude Code never installs a suggested plugin on its own; the user confirms.
+See https://code.claude.com/docs/en/plugin-relevance.
+
 ## Installation
 
 Add this marketplace to Claude Code:
