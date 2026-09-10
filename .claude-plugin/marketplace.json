@@ -227,7 +227,7 @@
       "name": "bigblocks",
       "source": {
         "source": "url",
-        "url": "https://github.com/b-open-io/bigblocks-registry.git"
+        "url": "https://github.com/b-open-io/bigblocks.git"
       },
       "description": "BigBlocks — shadcn-compatible block registry for Bitcoin applications. Build wallet, social, marketplace, and identity blocks using @1sat/* SDKs."
     },
