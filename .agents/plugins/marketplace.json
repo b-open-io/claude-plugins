@@ -330,7 +330,7 @@
       "name": "bigblocks",
       "source": {
         "source": "url",
-        "url": "https://github.com/b-open-io/bigblocks-registry.git"
+        "url": "https://github.com/b-open-io/bigblocks.git"
       },
       "policy": {
         "installation": "AVAILABLE",
