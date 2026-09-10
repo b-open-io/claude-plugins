@@ -53,6 +53,19 @@
       "category": "Productivity"
     },
     {
+      "name": "bitplan",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/opldotdev/bitplan.dev.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description": "BitPlan — encrypted, wallet-controlled HTML plans that stay hosted while changing and can be published as 1Sat Ordinals"
+    },
+    {
       "name": "core",
       "source": {
         "source": "url",
