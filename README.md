@@ -7,7 +7,18 @@ Plugin marketplace for Claude Code, Codex, and ChatGPT desktop. BSV blockchain o
 ## ChatGPT desktop and Codex
 
 Open Plugins → Add marketplace and enter `b-open-io/claude-plugins`.
-Leave Git ref and Sparse paths blank. Choose bOpen, then install BSV MCP.
+Leave Git ref and Sparse paths blank. Choose bOpen Plugins, then install
+what you need. From the Codex CLI:
+
+```bash
+codex plugin marketplace add b-open-io/claude-plugins --ref master
+codex plugin add core@b-open-io
+```
+
+The marketplace is named `b-open-io` on both Claude Code and Codex, so a
+plugin has the same id everywhere: `core@b-open-io`. Do not also add
+`b-open-io/prompts` as a marketplace; that repo's own marketplace file exists
+for developing the core modules and would register a duplicate.
 Authorize Sigma Identity when prompted and start a new chat. BSV MCP uses the
 hosted server; no Bun installation or private-key entry is required.
 
